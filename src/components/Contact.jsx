@@ -87,7 +87,7 @@ const Contact = () => {
           </h1>
           
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Get a free quote and schedule your repair service. Our expert technicians 
+            Get a free quote and schedule your repair service. Our xpert technicians 
             are ready to help you get your appliances back to perfect working condition.
           </p>
         </div>
@@ -144,7 +144,7 @@ const Contact = () => {
               </a>
 
               <a
-                href="mailto:contact@expertrepair.com?subject=Appliance Repair Service Request"
+                href="mailto:contact@xpertrepair.com?subject=Appliance Repair Service Request"
                 className="flex items-center space-x-4 p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 group"
               >
                 <div className="w-14 h-14 bg-purple-100 rounded-xl flex items-center justify-center group-hover:bg-purple-600 transition-colors duration-300">
@@ -152,7 +152,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h2 className="font-semibold text-gray-900 mb-1">Email</h2>
-                  <p className="text-gray-600">contact@expertrepair.com</p>
+                  <p className="text-gray-600">contact@xpertrepair.com</p>
                   <p className="text-sm text-purple-600">Send us an email</p>
                 </div>
               </a>
@@ -205,7 +205,7 @@ const Contact = () => {
                     Message Sent Successfully!
                   </h2>
                   <p className="text-gray-600 leading-relaxed">
-                    Thank you for contacting Expert Repair. We have received your message 
+                    Thank you for contacting xpert Repair. We have received your message 
                     and will respond within 24 hours. For urgent repairs, please call us directly.
                   </p>
                 </div>

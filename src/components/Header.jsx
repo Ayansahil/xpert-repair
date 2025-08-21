@@ -41,7 +41,7 @@ const Header = () => {
             </div>
             <div>
               <span className="text-xl lg:text-2xl font-bold text-gray-900">
-                Expert Repair
+                Xpert Repair
               </span>
               <p className="text-xs text-gray-600 hidden sm:block">
                 Home Appliance Services

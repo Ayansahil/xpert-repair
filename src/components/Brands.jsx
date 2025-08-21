@@ -7,117 +7,117 @@ const Brands = () => {
     {
       name: "Samsung",
       logo: "/brands/samsung.svg",
-      alt: "Samsung TV LCD LED repair service - Expert Repair Center Bhopal",
+      alt: "Samsung TV LCD LED repair service - Xpert Repair Center Bhopal",
     },
     {
       name: "LG",
       logo: "/brands/lg.svg",
-      alt: "LG TV LCD LED repair service - Expert Repair Center Bhopal",
+      alt: "LG TV LCD LED repair service - Xpert Repair Center Bhopal",
     },
     {
       name: "Sony",
       logo: "/brands/sony.svg",
-      alt: "Sony TV LCD LED repair service - Expert Repair Center Bhopal",
+      alt: "Sony TV LCD LED repair service - Xpert Repair Center Bhopal",
     },
     {
       name: "TCL",
       logo: "/brands/tcl.svg",
-      alt: "TCL TV LCD LED repair service - Expert Repair Center Bhopal",
+      alt: "TCL TV LCD LED repair service - Xpert Repair Center Bhopal",
     },
     {
       name: "Mi",
       logo: "/brands/mi.svg",
-      alt: "Mi TV LCD LED repair service - Expert Repair Center Bhopal",
+      alt: "Mi TV LCD LED repair service - Xpert Repair Center Bhopal",
     },
     {
       name: "Whirlpool",
       logo: "/brands/whirlpool.svg",
-      alt: "Whirlpool appliance repair service - Expert Repair Center Bhopal",
+      alt: "Whirlpool appliance repair service - Xpert Repair Center Bhopal",
     },
     {
       name: "Bosch",
       logo: "/brands/bosch.svg",
-      alt: "Bosch appliance repair service - Expert Repair Center Bhopal",
+      alt: "Bosch appliance repair service - Xpert Repair Center Bhopal",
     },
     {
       name: "Godrej",
       logo: "/brands/godrej.svg",
-      alt: "Godrej appliance repair service - Expert Repair Center Bhopal",
+      alt: "Godrej appliance repair service - Xpert Repair Center Bhopal",
     },
     {
       name: "Haier",
       logo: "/brands/haier.svg",
-      alt: "Haier TV LCD LED repair service - Expert Repair Center Bhopal",
+      alt: "Haier TV LCD LED repair service - Xpert Repair Center Bhopal",
     },
     {
       name: "Panasonic",
       logo: "/brands/panasonic.svg",
-      alt: "Panasonic TV LCD LED repair service - Expert Repair Center Bhopal",
+      alt: "Panasonic TV LCD LED repair service - Xpert Repair Center Bhopal",
     },
     {
       name: "Hitachi",
       logo: "/brands/hitachi.svg",
-      alt: "Hitachi TV LCD LED repair service - Expert Repair Center Bhopal",
+      alt: "Hitachi TV LCD LED repair service - Xpert Repair Center Bhopal",
     },
     {
       name: "Hyundai",
       logo: "/brands/hyundai.svg",
-      alt: "Hyundai Electronics TV repair service - Expert Repair Center Bhopal",
+      alt: "Hyundai Electronics TV repair service - Xpert Repair Center Bhopal",
     },
     {
       name: "Nokia",
       logo: "/brands/nokia.svg",
-      alt: "Nokia TV LCD LED repair service - Expert Repair Center Bhopal",
+      alt: "Nokia TV LCD LED repair service - Xpert Repair Center Bhopal",
     },
     {
       name: "Videocon",
       logo: "/brands/videocon.svg",
-      alt: "Videocon TV LCD LED repair service - Expert Repair Center Bhopal",
+      alt: "Videocon TV LCD LED repair service - Xpert Repair Center Bhopal",
     },
     {
       name: "Kodak",
       logo: "/brands/kodak.svg",
-      alt: "Kodak TV LCD LED repair service - Expert Repair Center Bhopal",
+      alt: "Kodak TV LCD LED repair service - Xpert Repair Center Bhopal",
     },
     {
       name: "Philips",
       logo: "/brands/philips.svg",
-      alt: "Philips TV LCD LED repair service - Expert Repair Center Bhopal",
+      alt: "Philips TV LCD LED repair service - Xpert Repair Center Bhopal",
     },
     {
       name: "IFB",
       logo: "/brands/ifb.svg",
-      alt: "IFB TV LCD LED repair service - Expert Repair Center Bhopal",
+      alt: "IFB TV LCD LED repair service - Xpert Repair Center Bhopal",
     },
     {
       name: "Realme",
       logo: "/brands/realme.svg",
-      alt: "Realme TV LCD LED repair service - Expert Repair Center Bhopal",
+      alt: "Realme TV LCD LED repair service - Xpert Repair Center Bhopal",
     },
     {
       name: "Sharp",
       logo: "/brands/sharp.svg",
-      alt: "Sharp TV LCD LED repair service - Expert Repair Center Bhopal",
+      alt: "Sharp TV LCD LED repair service - Xpert Repair Center Bhopal",
     },
      {
       name: "Micromax",
       logo: "/brands/micromax.svg",
-      alt: "Micromax TV LCD LED repair service - Expert Repair Center Bhopal",
+      alt: "Micromax TV LCD LED repair service - Xpert Repair Center Bhopal",
     },
     {
       name: "Sansui",
       logo: "/brands/sansui.svg",
-      alt: "Sansui TV LCD LED repair service - Expert Repair Center Bhopal",
+      alt: "Sansui TV LCD LED repair service - Xpert Repair Center Bhopal",
     },
     {
       name: "Electrolux",
       logo: "/brands/electrolux.svg",
-      alt: "Electrolux TV LCD LED repair service - Expert Repair Center Bhopal",
+      alt: "Electrolux TV LCD LED repair service - Xpert Repair Center Bhopal",
     },
     {
       name: "Onida",
       logo: "/brands/onida.svg",
-      alt: "Onida TV LCD LED repair service - Expert Repair Center Bhopal",
+      alt: "Onida TV LCD LED repair service - Xpert Repair Center Bhopal",
     },
   ];
 
@@ -252,7 +252,7 @@ const Brands = () => {
           <div className="p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
             <div className="text-4xl font-bold text-green-600 mb-2">50+</div>
             <div className="text-lg font-semibold text-gray-800 mb-2">
-              Expert Technicians
+              Xpert Technicians
             </div>
             <p className="text-gray-600 text-sm">
               Factory-trained professionals
@@ -287,7 +287,7 @@ const Brands = () => {
           width: fit-content;
         }
 
-        .pause-marquee:hover {
+        .animate-marquee-smooth:hover {
           animation-play-state: paused;
         }
 

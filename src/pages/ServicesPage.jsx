@@ -6,13 +6,13 @@ const ServicesPage = () => {
   return (
     <>
       <Helmet>
-        <title>Appliance Repair Services - Refrigerator, AC, Washing Machine & More | Expert Repair</title>
+        <title>Appliance Repair Services - Refrigerator, AC, Washing Machine & More | Xpert Repair</title>
         <meta name="description" content="Complete appliance repair services: Refrigerator, RO Water Purifier, Washing Machine, Air Conditioner, LED TV, Dishwasher, Microwave repair. Same-day service, fair pricing, 90-day warranty." />
         <meta name="keywords" content="appliance repair services, refrigerator repair service, washing machine repair, AC repair service, TV repair, dishwasher repair, microwave repair, RO water purifier service" />
-        <link rel="canonical" href="https://expertrepair.com/services" />
-        <meta property="og:title" content="Professional Appliance Repair Services - Expert Repair" />
+        <link rel="canonical" href="https://xpertrepair.com/services" />
+        <meta property="og:title" content="Professional Appliance Repair Services - Xpert Repair" />
         <meta property="og:description" content="Complete appliance repair services with same-day availability. Licensed technicians, fair pricing, 90-day warranty on all repairs." />
-        <meta property="og:url" content="https://expertrepair.com/services" />
+        <meta property="og:url" content="https://xpertrepair.com/services" />
       </Helmet>
       <Services />
     </>

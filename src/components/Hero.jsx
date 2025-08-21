@@ -48,7 +48,7 @@ const Hero = () => {
               </Link>
               <a
                 href="tel:+1234567890"
-                aria-label="Call Expert Repair at (123) 456-7890 for immediate appliance repair service"
+                aria-label="Call Xpert Repair at (123) 456-7890 for immediate appliance repair service"
                 className="flex items-center justify-center space-x-2 border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-600 hover:text-white transition-all duration-200"
               >
                 <Phone className="h-5 w-5" />

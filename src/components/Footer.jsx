@@ -16,7 +16,7 @@ const Footer = () => {
                 <Wrench className="h-6 w-6 text-white" />
               </div>
               <div>
-                <span className="text-2xl font-bold">Expert Repair</span>
+                <span className="text-2xl font-bold">Xpert Repair</span>
                 <p className="text-gray-400 text-sm">Home Appliance Services</p>
               </div>
             </Link>
@@ -29,21 +29,21 @@ const Footer = () => {
             <div className="flex space-x-4">
               <a 
                 href="#" 
-                aria-label="Follow Expert Repair on Facebook"
+                aria-label="Follow Xpert Repair on Facebook"
                 className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors duration-200"
               >
                 <Facebook className="h-5 w-5" />
               </a>
               <a 
                 href="#" 
-                aria-label="Follow Expert Repair on Twitter"
+                aria-label="Follow Xpert Repair on Twitter"
                 className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-400 transition-colors duration-200"
               >
                 <Twitter className="h-5 w-5" />
               </a>
               <a 
                 href="#" 
-                aria-label="Follow Expert Repair on Instagram"
+                aria-label="Follow Xpert Repair on Instagram"
                 className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-pink-600 transition-colors duration-200"
               >
                 <Instagram className="h-5 w-5" />
@@ -118,7 +118,7 @@ const Footer = () => {
             <div className="space-y-4">
               <a 
                 href="tel:+1234567890"
-                aria-label="Call Expert Repair at (123) 456-7890 for 24/7 emergency appliance repair service"
+                aria-label="Call Xpert Repair at (123) 456-7890 for 24/7 emergency appliance repair service"
                 className="flex items-start space-x-3 text-gray-400 hover:text-white transition-colors duration-200 group"
               >
                 <Phone className="h-5 w-5 mt-1 text-blue-500" />
@@ -129,13 +129,13 @@ const Footer = () => {
               </a>
               
               <a 
-                href="mailto:contact@expertrepair.com"
-                aria-label="Email Expert Repair at contact@expertrepair.com for free appliance repair quote"
+                href="mailto:contact@Xpertrepair.com"
+                aria-label="Email Xpert Repair at contact@Xpertrepair.com for free appliance repair quote"
                 className="flex items-start space-x-3 text-gray-400 hover:text-white transition-colors duration-200"
               >
                 <Mail className="h-5 w-5 mt-1 text-green-500" />
                 <div>
-                  <div className="font-medium">contact@expertrepair.com</div>
+                  <div className="font-medium">contact@Xpertrepair.com</div>
                   <div className="text-sm">Get your free quote</div>
                 </div>
               </a>
@@ -163,7 +163,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
             <div className="text-gray-400 text-sm text-center lg:text-left">
-              © {currentYear} Expert Repair. All rights reserved. Licensed & Insured.
+              © {currentYear} Xpert Repair. All rights reserved. Licensed & Insured.
             </div>
             
             <div className="flex items-center space-x-6 text-sm text-gray-400">

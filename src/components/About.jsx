@@ -5,7 +5,7 @@ const About = () => {
   const stats = [
     { icon: Users, number: '10,000+', label: 'Happy Customers' },
     { icon: Clock, number: '15+', label: 'Years Experience' },
-    { icon: Award, number: '50+', label: 'Expert Technicians' },
+    { icon: Award, number: '50+', label: 'Xpert Technicians' },
     { icon: Shield, number: '90-Day', label: 'Warranty Coverage' }
   ];
 
@@ -17,7 +17,7 @@ const About = () => {
           <div>
             <div className="inline-flex items-center bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium mb-6">
               <Award className="h-4 w-4 mr-2" />
-              About Expert Repair
+              About Xpert Repair
             </div>
             
             <h1 className="text-3xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
@@ -26,7 +26,7 @@ const About = () => {
             </h1>
             
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-              For over 15 years, Expert Repair has been the go-to choice for homeowners 
+              For over 15 years, Xpert Repair has been the go-to choice for homeowners 
               who demand quality appliance repair services. Our team of certified technicians 
               combines extensive experience with cutting-edge diagnostic tools to deliver 
               solutions that last.
@@ -34,7 +34,7 @@ const About = () => {
             
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
               We understand that appliance breakdowns are more than just inconveniences—they 
-              disrupt your daily routine. That's why we're committed to providing fast, 
+              disrupt your daily routine. That&apos;s why we&apos;re committed to providing fast, 
               reliable, and affordable repairs with a 90-day warranty on all our work.
             </p>
 
@@ -107,9 +107,9 @@ const About = () => {
                 ))}
               </div>
               <p className="text-blue-100 mb-4 leading-relaxed">
-                "Expert Repair saved the day! Our refrigerator broke down on a holiday weekend, 
+                &quot;Xpert Repair saved the day! Our refrigerator broke down on a holiday weekend, 
                 and they had a technician at our door within 2 hours. Professional, 
-                efficient, and reasonably priced."
+                efficient, and reasonably priced.&quot;
               </p>
               <div className="font-semibold">Sarah Johnson</div>
               <div className="text-blue-200 text-sm">Verified Customer</div>
