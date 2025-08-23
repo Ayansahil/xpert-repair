@@ -117,13 +117,13 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-6">Contact Info</h3>
             <div className="space-y-4">
               <a 
-                href="tel:+1234567890"
+                href="tel:+8878804847"
                 aria-label="Call Xpert Repair at (123) 456-7890 for 24/7 emergency appliance repair service"
                 className="flex items-start space-x-3 text-gray-400 hover:text-white transition-colors duration-200 group"
               >
                 <Phone className="h-5 w-5 mt-1 text-blue-500" />
                 <div>
-                  <div className="font-medium">(123) 456-7890</div>
+                  <div className="font-medium">(887) 880-4847</div>
                   <div className="text-sm">24/7 Emergency Service</div>
                 </div>
               </a>

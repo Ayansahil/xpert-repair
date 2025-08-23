@@ -47,7 +47,7 @@ const Hero = () => {
                 Get Free Quote
               </Link>
               <a
-                href="tel:+1234567890"
+                href="tel:+8878804847"
                 aria-label="Call Xpert Repair at (123) 456-7890 for immediate appliance repair service"
                 className="flex items-center justify-center space-x-2 border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-600 hover:text-white transition-all duration-200"
               >

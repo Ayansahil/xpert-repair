@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Monitor, Tv, Wind, Refrigerator, WashingMachine, Microwave } from 'lucide-react';
 
 const Services = () => {
@@ -78,6 +79,8 @@ return (
             const IconComponent = service.icon;
             return (
               <div
+                // CHANGED: Added an 'id' to each service card for direct navigation from the header.
+                id={service.slug}
                 key={service.id}
                 className="transform hover:scale-105 transition-all duration-300 hover:shadow-xl"
               >
@@ -96,11 +99,12 @@ return (
 
                 {/* Content Container - Slightly narrower with bottom-left rounded corner */}
                 <div className="bg-white shadow-lg rounded-bl-2xl p-6 -mt-1">
-                  <a href="#" className="block mb-3 hover:text-blue-600 transition-colors duration-200">
+                  {/* CHANGED: Replaced anchor tag with Link to navigate to the service detail page. */}
+                  <Link to={`/services/${service.slug}`} className="block mb-3 hover:text-blue-600 transition-colors duration-200">
                     <h3 className="text-xl font-bold text-gray-900 leading-tight">
                       {service.name}
                     </h3>
-                  </a>
+                  </Link>
                   <p className="text-gray-500 text-base leading-relaxed line-clamp-2">
                     {service.description}
                   </p>

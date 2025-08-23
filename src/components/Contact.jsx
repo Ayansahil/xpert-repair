@@ -1,12 +1,20 @@
-import React, { useState } from 'react';
-import { Phone, Mail, MapPin, MessageCircle, Send, CheckCircle, Clock } from 'lucide-react';
+import React, { useState } from "react";
+import {
+  Phone,
+  Mail,
+  MapPin,
+  MessageCircle,
+  Send,
+  CheckCircle,
+  Clock,
+} from "lucide-react";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    fullName: '',
-    email: '',
-    phone: '',
-    message: ''
+    fullName: "",
+    email: "",
+    phone: "",
+    message: "",
   });
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -14,25 +22,25 @@ const Contact = () => {
 
   const validateForm = () => {
     const newErrors = {};
-    
+
     if (!formData.fullName.trim()) {
-      newErrors.fullName = 'Full name is required';
+      newErrors.fullName = "Full name is required";
     }
-    
+
     if (!formData.email.trim()) {
-      newErrors.email = 'Email is required';
+      newErrors.email = "Email is required";
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-      newErrors.email = 'Please enter a valid email address';
+      newErrors.email = "Please enter a valid email address";
     }
-    
+
     if (!formData.phone.trim()) {
-      newErrors.phone = 'Phone number is required';
+      newErrors.phone = "Phone number is required";
     } else if (!/^\+?[\d\s()-]{10,}$/.test(formData.phone.trim())) {
-      newErrors.phone = 'Please enter a valid phone number';
+      newErrors.phone = "Please enter a valid phone number";
     }
-    
+
     if (!formData.message.trim()) {
-      newErrors.message = 'Message is required';
+      newErrors.message = "Message is required";
     }
 
     setErrors(newErrors);
@@ -41,17 +49,17 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
+
     if (!validateForm()) return;
-    
+
     setIsSubmitting(true);
-    
+
     // Simulate form submission
     setTimeout(() => {
       setIsSubmitting(false);
       setIsSubmitted(true);
-      setFormData({ fullName: '', email: '', phone: '', message: '' });
-      
+      setFormData({ fullName: "", email: "", phone: "", message: "" });
+
       // Reset success message after 5 seconds
       setTimeout(() => setIsSubmitted(false), 5000);
     }, 2000);
@@ -59,16 +67,25 @@ const Contact = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
-    
+    setFormData((prev) => ({ ...prev, [name]: value }));
+
     // Clear error when user starts typing
     if (errors[name]) {
-      setErrors(prev => ({ ...prev, [name]: '' }));
+      setErrors((prev) => ({ ...prev, [name]: "" }));
     }
   };
 
   const whatsappMessage = encodeURIComponent(
-    "Hi, I need appliance repair service. Please contact me."
+    `Hello Xpert Repair,
+
+    I need help with an appliance. Here are the details:
+
+   *Appliance Type:* (e.g., LED TV, AC, Fridge)
+   *Brand & Model:* (if known)
+   *The Problem:* (e.g., Not cooling, making noise)
+   *My Preferred Time:* (e.g., Today evening)
+
+   Please contact me. Thank you!`
   );
 
   return (
@@ -80,15 +97,16 @@ const Contact = () => {
             <MessageCircle className="h-4 w-4 mr-2" />
             Get In Touch
           </div>
-          
+
           <h1 className="text-3xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
             Ready to Fix Your
             <span className="text-blue-600 block">Appliance Today?</span>
           </h1>
-          
+
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Get a free quote and schedule your repair service. Our xpert technicians 
-            are ready to help you get your appliances back to perfect working condition.
+            Get a free quote and schedule your repair service. Our xpert
+            technicians are ready to help you get your appliances back to
+            perfect working condition.
           </p>
         </div>
 
@@ -104,7 +122,7 @@ const Contact = () => {
                     Emergency Service Available
                   </h2>
                   <p className="text-red-700 text-sm leading-relaxed">
-                    24/7 emergency repair services for critical appliances. 
+                    24/7 emergency repair services for critical appliances.
                     Additional charges may apply for after-hours service.
                   </p>
                 </div>
@@ -114,7 +132,7 @@ const Contact = () => {
             {/* Contact Methods */}
             <div className="space-y-6">
               <a
-                href="tel:+1234567890"
+                href="tel:+8878804847"
                 className="flex items-center space-x-4 p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 group"
               >
                 <div className="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center group-hover:bg-blue-600 transition-colors duration-300">
@@ -122,13 +140,13 @@ const Contact = () => {
                 </div>
                 <div>
                   <h2 className="font-semibold text-gray-900 mb-1">Call Now</h2>
-                  <p className="text-gray-600">(123) 456-7890</p>
+                  <p className="text-gray-600">8878804847</p>
                   <p className="text-sm text-blue-600">Click to call now</p>
                 </div>
               </a>
 
               <a
-                href={`https://wa.me/1234567890?text=${whatsappMessage}`}
+                href={`https://wa.me/8878804847?text=${whatsappMessage}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center space-x-4 p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 group"
@@ -162,7 +180,9 @@ const Contact = () => {
                   <MapPin className="h-6 w-6 text-orange-600" />
                 </div>
                 <div>
-                  <h2 className="font-semibold text-gray-900 mb-1">Service Area</h2>
+                  <h2 className="font-semibold text-gray-900 mb-1">
+                    Service Area
+                  </h2>
                   <p className="text-gray-600">City-wide Coverage</p>
                   <p className="text-sm text-orange-600">We come to you</p>
                 </div>
@@ -171,7 +191,9 @@ const Contact = () => {
 
             {/* Business Hours */}
             <div className="bg-white p-6 rounded-2xl shadow-lg">
-              <h2 className="font-semibold text-gray-900 mb-4">Business Hours</h2>
+              <h2 className="font-semibold text-gray-900 mb-4">
+                Business Hours
+              </h2>
               <div className="space-y-2 text-sm">
                 <div className="flex justify-between">
                   <span className="text-gray-600">Monday - Friday:</span>
@@ -205,8 +227,9 @@ const Contact = () => {
                     Message Sent Successfully!
                   </h2>
                   <p className="text-gray-600 leading-relaxed">
-                    Thank you for contacting xpert Repair. We have received your message 
-                    and will respond within 24 hours. For urgent repairs, please call us directly.
+                    Thank you for contacting xpert Repair. We have received your
+                    message and will respond within 24 hours. For urgent
+                    repairs, please call us directly.
                   </p>
                 </div>
               ) : (
@@ -216,15 +239,23 @@ const Contact = () => {
                       Get Your Free Quote
                     </h2>
                     <p className="text-gray-600 leading-relaxed">
-                      Fill out the form below and we will get back to you with a personalized 
-                      quote for your appliance repair needs.
+                      Fill out the form below and we will get back to you with a
+                      personalized quote for your appliance repair needs.
                     </p>
                   </div>
 
-                  <form onSubmit={handleSubmit} className="space-y-6" itemScope itemType="https://schema.org/ContactPage">
+                  <form
+                    onSubmit={handleSubmit}
+                    className="space-y-6"
+                    itemScope
+                    itemType="https://schema.org/ContactPage"
+                  >
                     {/* Full Name Field */}
                     <div>
-                      <label htmlFor="fullName" className="block text-sm font-medium text-gray-700 mb-2">
+                      <label
+                        htmlFor="fullName"
+                        className="block text-sm font-medium text-gray-700 mb-2"
+                      >
                         Full Name *
                       </label>
                       <input
@@ -235,18 +266,25 @@ const Contact = () => {
                         onChange={handleChange}
                         autoComplete="name"
                         className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors duration-200 ${
-                          errors.fullName ? 'border-red-500 bg-red-50' : 'border-gray-300'
+                          errors.fullName
+                            ? "border-red-500 bg-red-50"
+                            : "border-gray-300"
                         }`}
                         placeholder="Enter your full name"
                       />
                       {errors.fullName && (
-                        <p className="mt-2 text-sm text-red-600">{errors.fullName}</p>
+                        <p className="mt-2 text-sm text-red-600">
+                          {errors.fullName}
+                        </p>
                       )}
                     </div>
 
                     {/* Email Field */}
                     <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                      <label
+                        htmlFor="email"
+                        className="block text-sm font-medium text-gray-700 mb-2"
+                      >
                         Email Address *
                       </label>
                       <input
@@ -257,18 +295,25 @@ const Contact = () => {
                         onChange={handleChange}
                         autoComplete="email"
                         className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors duration-200 ${
-                          errors.email ? 'border-red-500 bg-red-50' : 'border-gray-300'
+                          errors.email
+                            ? "border-red-500 bg-red-50"
+                            : "border-gray-300"
                         }`}
                         placeholder="Enter your email address"
                       />
                       {errors.email && (
-                        <p className="mt-2 text-sm text-red-600">{errors.email}</p>
+                        <p className="mt-2 text-sm text-red-600">
+                          {errors.email}
+                        </p>
                       )}
                     </div>
 
                     {/* Phone Field */}
                     <div>
-                      <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
+                      <label
+                        htmlFor="phone"
+                        className="block text-sm font-medium text-gray-700 mb-2"
+                      >
                         Phone Number *
                       </label>
                       <input
@@ -279,18 +324,25 @@ const Contact = () => {
                         onChange={handleChange}
                         autoComplete="tel"
                         className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors duration-200 ${
-                          errors.phone ? 'border-red-500 bg-red-50' : 'border-gray-300'
+                          errors.phone
+                            ? "border-red-500 bg-red-50"
+                            : "border-gray-300"
                         }`}
                         placeholder="Enter your phone number"
                       />
                       {errors.phone && (
-                        <p className="mt-2 text-sm text-red-600">{errors.phone}</p>
+                        <p className="mt-2 text-sm text-red-600">
+                          {errors.phone}
+                        </p>
                       )}
                     </div>
 
                     {/* Message Field */}
                     <div>
-                      <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                      <label
+                        htmlFor="message"
+                        className="block text-sm font-medium text-gray-700 mb-2"
+                      >
                         Message *
                       </label>
                       <textarea
@@ -300,12 +352,22 @@ const Contact = () => {
                         onChange={handleChange}
                         rows="6"
                         className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors duration-200 resize-none ${
-                          errors.message ? 'border-red-500 bg-red-50' : 'border-gray-300'
+                          errors.message
+                            ? "border-red-500 bg-red-50"
+                            : "border-gray-300"
                         }`}
-                        placeholder="Describe your appliance issue and preferred service time..."
+                        placeholder="Hi, I need an appliance repair service...  
+Appliance: [e.g. Washing Machine, Fridge, AC]  
+Model: [e.g. LG 7kg, Samsung Double Door]  
+Problem: [e.g. Not cooling, making noise, not starting]  
+Preferred Time: [e.g. Today evening, Tomorrow morning]  
+
+Please contact me."
                       ></textarea>
                       {errors.message && (
-                        <p className="mt-2 text-sm text-red-600">{errors.message}</p>
+                        <p className="mt-2 text-sm text-red-600">
+                          {errors.message}
+                        </p>
                       )}
                     </div>
 
@@ -314,9 +376,9 @@ const Contact = () => {
                       type="submit"
                       disabled={isSubmitting}
                       className={`w-full py-4 px-6 rounded-lg font-semibold text-lg transition-all duration-200 flex items-center justify-center space-x-2 ${
-                        isSubmitting 
-                          ? 'bg-gray-400 cursor-not-allowed' 
-                          : 'bg-blue-600 hover:bg-blue-700 shadow-lg hover:shadow-xl transform hover:-translate-y-1'
+                        isSubmitting
+                          ? "bg-gray-400 cursor-not-allowed"
+                          : "bg-blue-600 hover:bg-blue-700 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
                       } text-white`}
                     >
                       {isSubmitting ? (
