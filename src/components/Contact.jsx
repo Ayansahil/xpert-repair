@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useForm, ValidationError } from '@formspree/react';
 import {
   Phone,
   Mail,
@@ -10,6 +11,7 @@ import {
 } from "lucide-react";
 
 const Contact = () => {
+  const [state, handleFormspreeSubmit] = useForm("meoljdgg");
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -17,8 +19,6 @@ const Contact = () => {
     message: "",
   });
   const [errors, setErrors] = useState({});
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const validateForm = () => {
     const newErrors = {};
@@ -47,31 +47,34 @@ const Contact = () => {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (!validateForm()) return;
 
-    setIsSubmitting(true);
+    // Submit to Formspree
+    await handleFormspreeSubmit(e);
 
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setIsSubmitted(true);
+    // If successful, clear form
+    if (state.succeeded) {
       setFormData({ fullName: "", email: "", phone: "", message: "" });
-
-      // Reset success message after 5 seconds
-      setTimeout(() => setIsSubmitted(false), 5000);
-    }, 2000);
+    }
   };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
+    
+    // Handle the name field mapping
+    if (name === 'name') {
+      setFormData((prev) => ({ ...prev, fullName: value }));
+    } else {
+      setFormData((prev) => ({ ...prev, [name]: value }));
+    }
 
     // Clear error when user starts typing
-    if (errors[name]) {
-      setErrors((prev) => ({ ...prev, [name]: "" }));
+    const errorKey = name === 'name' ? 'fullName' : name;
+    if (errors[errorKey]) {
+      setErrors((prev) => ({ ...prev, [errorKey]: "" }));
     }
   };
 
@@ -218,7 +221,7 @@ const Contact = () => {
           {/* Contact Form */}
           <div className="lg:col-span-2">
             <div className="bg-white p-8 lg:p-12 rounded-2xl shadow-lg">
-              {isSubmitted ? (
+              {state.succeeded ? (
                 <div className="text-center py-12">
                   <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
                     <CheckCircle className="h-10 w-10 text-green-600" />
@@ -227,7 +230,7 @@ const Contact = () => {
                     Message Sent Successfully!
                   </h2>
                   <p className="text-gray-600 leading-relaxed">
-                    Thank you for contacting xpert Repair. We have received your
+                    Thank you for contacting Xpert Repair. We have received your
                     message and will respond within 24 hours. For urgent
                     repairs, please call us directly.
                   </p>
@@ -261,7 +264,7 @@ const Contact = () => {
                       <input
                         type="text"
                         id="fullName"
-                        name="fullName"
+                        name="name"
                         value={formData.fullName}
                         onChange={handleChange}
                         autoComplete="name"
@@ -277,6 +280,12 @@ const Contact = () => {
                           {errors.fullName}
                         </p>
                       )}
+                      <ValidationError 
+                        prefix="Name" 
+                        field="name"
+                        errors={state.errors}
+                        className="mt-2 text-sm text-red-600"
+                      />
                     </div>
 
                     {/* Email Field */}
@@ -306,6 +315,12 @@ const Contact = () => {
                           {errors.email}
                         </p>
                       )}
+                      <ValidationError 
+                        prefix="Email" 
+                        field="email"
+                        errors={state.errors}
+                        className="mt-2 text-sm text-red-600"
+                      />
                     </div>
 
                     {/* Phone Field */}
@@ -335,6 +350,12 @@ const Contact = () => {
                           {errors.phone}
                         </p>
                       )}
+                      <ValidationError 
+                        prefix="Phone" 
+                        field="phone"
+                        errors={state.errors}
+                        className="mt-2 text-sm text-red-600"
+                      />
                     </div>
 
                     {/* Message Field */}
@@ -361,7 +382,6 @@ Appliance: [e.g. Washing Machine, Fridge, AC]
 Model: [e.g. LG 7kg, Samsung Double Door]  
 Problem: [e.g. Not cooling, making noise, not starting]  
 Preferred Time: [e.g. Today evening, Tomorrow morning]  
-
 Please contact me."
                       ></textarea>
                       {errors.message && (
@@ -369,19 +389,25 @@ Please contact me."
                           {errors.message}
                         </p>
                       )}
+                      <ValidationError 
+                        prefix="Message" 
+                        field="message"
+                        errors={state.errors}
+                        className="mt-2 text-sm text-red-600"
+                      />
                     </div>
 
                     {/* Submit Button */}
                     <button
                       type="submit"
-                      disabled={isSubmitting}
+                      disabled={state.submitting}
                       className={`w-full py-4 px-6 rounded-lg font-semibold text-lg transition-all duration-200 flex items-center justify-center space-x-2 ${
-                        isSubmitting
+                        state.submitting
                           ? "bg-gray-400 cursor-not-allowed"
                           : "bg-blue-600 hover:bg-blue-700 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
                       } text-white`}
                     >
-                      {isSubmitting ? (
+                      {state.submitting ? (
                         <>
                           <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
                           <span>Sending...</span>

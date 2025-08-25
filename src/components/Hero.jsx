@@ -4,8 +4,8 @@ import { Phone, Clock, Star, CheckCircle } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section className="relative bg-gradient-to-br from-blue-50 via-white to-blue-50 pt-16 lg:pt-20">
-      <div className="container mx-auto px-4 lg:px-8 py-12 lg:py-20">
+    <section className="relative bg-gradient-to-br from-blue-50 via-white to-blue-50">
+      <div className="container mx-auto px-4 lg:px-8 pt-24 lg:pt-32 pb-12 lg:pb-20">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Content */}
           <div className="text-center lg:text-left">
