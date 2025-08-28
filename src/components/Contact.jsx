@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useForm, ValidationError } from '@formspree/react';
+import { motion } from "framer-motion";
 import {
   Phone,
   Mail,
@@ -95,7 +96,13 @@ const Contact = () => {
     <section className="py-16 lg:py-24 bg-gray-50">
       <div className="container mx-auto px-4 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <motion.div
+          className="text-center mb-16"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.6 }}
+        >
           <div className="inline-flex items-center bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium mb-6">
             <MessageCircle className="h-4 w-4 mr-2" />
             Get In Touch
@@ -111,11 +118,17 @@ const Contact = () => {
             technicians are ready to help you get your appliances back to
             perfect working condition.
           </p>
-        </div>
+        </motion.div>
 
         <div className="grid lg:grid-cols-3 gap-12">
           {/* Contact Information */}
-          <div className="lg:col-span-1 space-y-8">
+          <motion.div
+            className="lg:col-span-1 space-y-8"
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.7 }}
+          >
             {/* Emergency Notice */}
             <div className="bg-red-50 border border-red-200 p-6 rounded-2xl">
               <div className="flex items-start space-x-3">
@@ -216,10 +229,16 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* Contact Form */}
-          <div className="lg:col-span-2">
+          <motion.div
+            className="lg:col-span-2"
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.7, delay: 0.2 }}
+          >
             <div className="bg-white p-8 lg:p-12 rounded-2xl shadow-lg">
               {state.succeeded ? (
                 <div className="text-center py-12">
@@ -427,7 +446,7 @@ Please contact me."
                 </>
               )}
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

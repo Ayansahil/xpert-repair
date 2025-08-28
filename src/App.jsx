@@ -1,37 +1,62 @@
 import React from 'react';
-// CHANGED: Reverted to the traditional BrowserRouter setup for simplicity.
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 
-// CHANGED: All page components are imported here for routing.
+// Layout Components
 import Header from './components/Header.jsx';
 import Footer from './components/Footer.jsx';
+
+// Page & Component Imports
 import HomePage from './pages/HomePage';
-import AboutPage from './pages/AboutPage';
 import ServicesPage from './pages/ServicesPage';
-import BrandsPage from './pages/BrandsPage';
-import ContactPage from './pages/ContactPage';
-// CHANGED: Imported the ServiceDetailPage to handle individual service routes.
+import LedLcdTvRepair from './pages/services/led-lcd-tv-repair.jsx';
+import PlasmaTvRepair from './pages/services/plasma-tv-repair.jsx';
+import AirConditionerRepair from './pages/services/air-conditioner-repair.jsx';
+import RefrigeratorRepair from './pages/services/refrigerator-repair.jsx';
+import WashingMachineRepair from './pages/services/washing-machine-repair.jsx';
+import MicrowaveOvenRepair from './pages/services/microwave-oven-repair.jsx';
+import ROPurifierRepair from './pages/services/ro-purifier-repair.jsx';
+import GeyserRepair from './pages/services/geyser-repair.jsx';
 
+// Using existing components as pages so header links work
+import About from './components/About';
+import Brands from './components/Brands';
+import Contact from './components/Contact';
 
-function App() {
+// This helper component scrolls to the top of the page on route change
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return null;
+};
+
+const App = () => {
   return (
     <HelmetProvider>
-      {/* CHANGED: Using Router to wrap the application. Header and Footer are outside
-          Routes so they appear on every page. The Layout.jsx file is no longer needed. */}
       <Router>
+        <ScrollToTop />
         <div className="flex flex-col min-h-screen bg-gray-50">
           <Header />
-          {/* CHANGED: Adjusted top padding to account for the restored header height. */}
-          <main className="flex-grow pt-24">
+          {/* Top padding to prevent content from being hidden by the fixed header */}
+          <main className="flex-grow pt-16 lg:pt-20">
             <Routes>
               <Route path="/" element={<HomePage />} />
-              <Route path="/about" element={<AboutPage />} />
+              <Route path="/about" element={<About />} />
               <Route path="/services" element={<ServicesPage />} />
-              {/* CHANGED: Added a dynamic route for individual service pages. */}
-              {/* <Route path="/services/:serviceId" element={<ServiceDetailPage />} /> */}
-              <Route path="/brands" element={<BrandsPage />} />
-              <Route path="/contact" element={<ContactPage />} />
+              
+              <Route path="/services/led-lcd-tv-repair" element={<LedLcdTvRepair />} />
+              <Route path="/services/plasma-tv-repair" element={<PlasmaTvRepair />} />
+              <Route path="/services/air-conditioner-repair" element={<AirConditionerRepair />} />
+              <Route path="/services/refrigerator-repair" element={<RefrigeratorRepair />} />
+              <Route path="/services/washing-machine-repair" element={<WashingMachineRepair />} />
+              <Route path="/services/microwave-oven-repair" element={<MicrowaveOvenRepair />} />
+              <Route path="/services/ro-purifier-repair" element={<ROPurifierRepair />} />
+              <Route path="/services/geyser-repair" element={<GeyserRepair />} />
+
+              <Route path="/brands" element={<Brands />} />
+              <Route path="/contact" element={<Contact />} />
             </Routes>
           </main>
           <Footer />
@@ -39,6 +64,6 @@ function App() {
       </Router>
     </HelmetProvider>
   );
-}
+};
 
 export default App;

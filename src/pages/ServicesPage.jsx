@@ -6,13 +6,28 @@ const ServicesPage = () => {
   return (
     <>
       <Helmet>
-        <title>Appliance Repair Services - Refrigerator, AC, Washing Machine & More | Xpert Repair</title>
-        <meta name="description" content="Complete appliance repair services: Refrigerator, RO Water Purifier, Washing Machine, Air Conditioner, LED TV, Dishwasher, Microwave repair. Same-day service, fair pricing, 90-day warranty." />
-        <meta name="keywords" content="appliance repair services, refrigerator repair service, washing machine repair, AC repair service, TV repair, dishwasher repair, microwave repair, RO water purifier service" />
+        <title>Appliance Repair Services in Bhopal | TV, AC, Fridge | Xpert Repair</title>
+        <meta name="description" content="Xpert Repair offers expert appliance repair services in Bhopal. We fix Refrigerators, ACs, Washing Machines, LED TVs, and more. Same-day service available. Call (887) 880-4847." />
+        <meta name="keywords" content="appliance repair services bhopal, refrigerator repair service bhopal, washing machine repair bhopal, ac repair service bhopal, led tv repair bhopal, dishwasher repair, microwave repair, ro water purifier service" />
         <link rel="canonical" href="https://xpertrepair.com/services" />
-        <meta property="og:title" content="Professional Appliance Repair Services - Xpert Repair" />
-        <meta property="og:description" content="Complete appliance repair services with same-day availability. Licensed technicians, fair pricing, 90-day warranty on all repairs." />
+        <meta property="og:title" content="Expert Appliance Repair Services in Bhopal | Xpert Repair" />
+        <meta property="og:description" content="From refrigerators to air conditioners, our certified technicians in Bhopal provide fast and reliable repair services for all your home appliances. 90-day warranty on all jobs." />
         <meta property="og:url" content="https://xpertrepair.com/services" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "serviceType": "Appliance Repair",
+            "provider": {
+              "@type": "LocalBusiness",
+              "name": "Xpert Home Appliance Repair",
+              "telephone": "+918878804847",
+              "address": { "@type": "PostalAddress", "addressLocality": "Bhopal", "addressRegion": "MP", "addressCountry": "IN" }
+            },
+            "areaServed": { "@type": "City", "name": "Bhopal" },
+            "description": "Same-day repair services for a wide range of home appliances including refrigerators, washing machines, air conditioners, and LED TVs."
+          })}
+        </script>
       </Helmet>
       <Services />
     </>

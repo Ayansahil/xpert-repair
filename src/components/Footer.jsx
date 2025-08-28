@@ -5,6 +5,17 @@ import { Phone, Mail, MapPin, Clock, Facebook, Twitter, Instagram, Wrench } from
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
+  const serviceLinks = [
+    { name: 'Refrigerator Repair', path: '/services/refrigerator-repair' },
+    { name: 'Washing Machine Repair', path: '/services/washing-machine-repair' },
+    { name: 'Air Conditioner Repair', path: '/services/air-conditioner-repair' },
+    { name: 'LED & LCD TV Repair', path: '/services/led-lcd-tv-repair' },
+    { name: 'Microwave Oven Repair', path: '/services/microwave-oven-repair' },
+    { name: 'RO Purifier Repair', path: '/services/ro-purifier-repair' },
+    { name: 'Geyser Repair', path: '/services/geyser-repair' },
+    {name: 'Plasma Tv Repair', path: '/services/plasma-tv-repair'}
+  ];
+
   return (
     <footer className="bg-gray-900 text-white">
       <div className="container mx-auto px-4 lg:px-8 py-12 lg:py-16">
@@ -102,13 +113,16 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-6">Our Services</h3>
             <ul className="space-y-3 text-sm">
-              <li className="text-gray-400">Refrigerator Repair</li>
-              <li className="text-gray-400">Washing Machine Service</li>
-              <li className="text-gray-400">Air Conditioner Repair</li>
-              <li className="text-gray-400">LED TV Repair</li>
-              <li className="text-gray-400">Dishwasher Service</li>
-              <li className="text-gray-400">Microwave Repair</li>
-              <li className="text-gray-400">RO Water Purifier</li>
+              {serviceLinks.map((service) => (
+                <li key={service.name}>
+                  <Link
+                    to={service.path}
+                    className="text-gray-400 hover:text-white transition-colors duration-200"
+                  >
+                    {service.name}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 

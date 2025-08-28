@@ -39,8 +39,8 @@ const Header = () => {
     { name: 'Refrigerator Repair', slug: 'refrigerator-repair' },
     { name: 'Washing Machine Repair', slug: 'washing-machine-repair' },
     { name: 'Microwave Oven Repair', slug: 'microwave-oven-repair' },
+    { name: 'Ro Purifier Repair', slug: 'ro-purifier-repair' },
     { name: 'Geyser Repair', slug: 'geyser-repair' },
-    { name: 'Ro Purifier Repair', slug: 'ro-repair' },
   ];
 
   const closeMobileMenu = () => {
@@ -64,14 +64,15 @@ const Header = () => {
             {/* Logo */}
             <NavLink to="/" className="flex items-center space-x-3 flex-shrink-0" aria-label="Xpert Repair Home">
               <div className="bg-gradient-to-br from-[#3B82F6] to-blue-700 p-2.5 rounded-xl shadow-lg">
-                {/* CHANGED: Replaced complex SVG with a clean Wrench icon from lucide-react */}
                 <Wrench className="h-6 w-6 text-white" />
               </div>
               <div>
-                <h1 className="text-xl lg:text-2xl font-bold text-gray-900" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                {/* CHANGED: Removed inline font-family, now handled globally via Tailwind config */}
+                <h1 className="text-xl lg:text-2xl font-semibold text-gray-900">
                   Xpert Repair
                 </h1>
-                <p className="text-xs text-gray-600 font-medium hidden sm:block" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                {/* CHANGED: Removed inline font-family, now handled globally via Tailwind config */}
+                <p className="text-xs text-gray-600 font-medium hidden sm:block">
                   Home Appliance Services
                 </p>
               </div>
@@ -79,15 +80,16 @@ const Header = () => {
 
             {/* Desktop Navigation */}
             {/* CHANGED: Used semantic <ul> for the navigation list. */}
-            <ul className="hidden lg:flex items-center space-x-2" style={{ fontFamily: 'Poppins, sans-serif' }}>
+            {/* CHANGED: Removed inline font-family, now handled globally via Tailwind config */}
+            <ul className="hidden lg:flex items-center space-x-2">
               <li>
                 {/* CHANGED: Replaced <a> with <NavLink> for client-side routing and active styles. */}
-                <NavLink to="/" className={({isActive}) => `font-bold transition-all duration-300 px-4 py-2 rounded-lg ${isActive ? 'bg-[#3B82F6] text-white' : 'text-gray-700 hover:bg-[#3B82F6] hover:text-white'}`}>
+                <NavLink to="/" className={({isActive}) => `font-semibold transition-all duration-300 px-4 py-2 rounded-full ${isActive ? 'bg-[#3B82F6] text-white' : 'text-gray-700 hover:bg-[#3B82F6] hover:text-white'}`}>
                   Home
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/about" className={({isActive}) => `font-bold transition-all duration-300 px-4 py-2 rounded-lg ${isActive ? 'bg-[#3B82F6] text-white' : 'text-gray-700 hover:bg-[#3B82F6] hover:text-white'}`}>
+                <NavLink to="/about" className={({isActive}) => `font-semibold transition-all duration-300 px-4 py-2 rounded-full ${isActive ? 'bg-[#3B82F6] text-white' : 'text-gray-700 hover:bg-[#3B82F6] hover:text-white'}`}>
                   About
                 </NavLink>
               </li>
@@ -96,7 +98,7 @@ const Header = () => {
               <li className="relative" onMouseEnter={() => setIsServicesOpen(true)} onMouseLeave={() => setIsServicesOpen(false)}>
                 <NavLink 
                   to="/services" 
-                  className={({isActive}) => `font-bold transition-all duration-300 px-4 py-2 rounded-lg flex items-center space-x-1 ${isActive ? 'bg-[#3B82F6] text-white' : 'text-gray-700 hover:bg-[#3B82F6] hover:text-white'}`}
+                  className={({isActive}) => `font-semibold transition-all duration-300 px-4 py-2 rounded-full flex items-center space-x-1 ${isActive ? 'bg-[#3B82F6] text-white' : 'text-gray-700 hover:bg-[#3B82F6] hover:text-white'}`}
                 >
                   <span>Services</span>
                   <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${isServicesOpen ? 'rotate-180' : ''}`} />
@@ -127,12 +129,12 @@ const Header = () => {
               </li>
 
               <li>
-                <NavLink to="/brands" className={({isActive}) => `font-bold transition-all duration-300 px-4 py-2 rounded-lg ${isActive ? 'bg-[#3B82F6] text-white' : 'text-gray-700 hover:bg-[#3B82F6] hover:text-white'}`}>
+                <NavLink to="/brands" className={({isActive}) => `font-semibold transition-all duration-300 px-4 py-2 rounded-full ${isActive ? 'bg-[#3B82F6] text-white' : 'text-gray-700 hover:bg-[#3B82F6] hover:text-white'}`}>
                   Brands
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/contact" className={({isActive}) => `font-bold transition-all duration-300 px-4 py-2 rounded-lg ${isActive ? 'bg-[#3B82F6] text-white' : 'text-gray-700 hover:bg-[#3B82F6] hover:text-white'}`}>
+                <NavLink to="/contact" className={({isActive}) => `font-semibold transition-all duration-300 px-4 py-2 rounded-full ${isActive ? 'bg-[#3B82F6] text-white' : 'text-gray-700 hover:bg-[#3B82F6] hover:text-white'}`}>
                   Contact
                 </NavLink>
               </li>
@@ -183,15 +185,16 @@ const Header = () => {
           </div>
 
           {/* Mobile Navigation Links */}
-          <nav className="flex-1 overflow-y-auto py-6" style={{ fontFamily: 'Poppins, sans-serif' }}>
+          {/* CHANGED: Removed inline font-family, now handled globally via Tailwind config */}
+          <nav className="flex-1 overflow-y-auto py-6">
             <ul className="px-4 space-y-1">
               <li>
-                <NavLink to="/" onClick={closeMobileMenu} className={({isActive}) => `block py-3 px-4 font-bold rounded-lg transition-all duration-300 ${isActive ? 'bg-[#3B82F6] text-white' : 'text-gray-700 hover:bg-[#3B82F6] hover:text-white'}`}>
+                <NavLink to="/" onClick={closeMobileMenu} className={({isActive}) => `block py-3 px-4 font-semibold rounded-lg transition-all duration-300 ${isActive ? 'bg-[#3B82F6] text-white' : 'text-gray-700 hover:bg-[#3B82F6] hover:text-white'}`}>
                   Home
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/about" onClick={closeMobileMenu} className={({isActive}) => `block py-3 px-4 font-bold rounded-lg transition-all duration-300 ${isActive ? 'bg-[#3B82F6] text-white' : 'text-gray-700 hover:bg-[#3B82F6] hover:text-white'}`}>
+                <NavLink to="/about" onClick={closeMobileMenu} className={({isActive}) => `block py-3 px-4 font-semibold rounded-lg transition-all duration-300 ${isActive ? 'bg-[#3B82F6] text-white' : 'text-gray-700 hover:bg-[#3B82F6] hover:text-white'}`}>
                   About
                 </NavLink>
               </li>
@@ -200,7 +203,7 @@ const Header = () => {
               <li>
                 <button
                   onClick={() => setIsServicesOpen(!isServicesOpen)}
-                  className="flex items-center justify-between w-full py-3 px-4 font-bold text-gray-700 hover:bg-[#3B82F6] hover:text-white rounded-lg transition-all duration-300"
+                  className="flex items-center justify-between w-full py-3 px-4 font-semibold text-gray-700 hover:bg-[#3B82F6] hover:text-white rounded-lg transition-all duration-300"
                   aria-haspopup="true"
                   aria-expanded={isServicesOpen}
                 >
@@ -232,12 +235,12 @@ const Header = () => {
               </li>
 
               <li>
-                <NavLink to="/brands" onClick={closeMobileMenu} className={({isActive}) => `block py-3 px-4 font-bold rounded-lg transition-all duration-300 ${isActive ? 'bg-[#3B82F6] text-white' : 'text-gray-700 hover:bg-[#3B82F6] hover:text-white'}`}>
+                <NavLink to="/brands" onClick={closeMobileMenu} className={({isActive}) => `block py-3 px-4 font-semibold rounded-lg transition-all duration-300 ${isActive ? 'bg-[#3B82F6] text-white' : 'text-gray-700 hover:bg-[#3B82F6] hover:text-white'}`}>
                   Brands
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/contact" onClick={closeMobileMenu} className={({isActive}) => `block py-3 px-4 font-bold rounded-lg transition-all duration-300 ${isActive ? 'bg-[#3B82F6] text-white' : 'text-gray-700 hover:bg-[#3B82F6] hover:text-white'}`}>
+                <NavLink to="/contact" onClick={closeMobileMenu} className={({isActive}) => `block py-3 px-4 font-semibold rounded-lg transition-all duration-300 ${isActive ? 'bg-[#3B82F6] text-white' : 'text-gray-700 hover:bg-[#3B82F6] hover:text-white'}`}>
                   Contact
                 </NavLink>
               </li>

@@ -1,5 +1,6 @@
 import React from "react";
 import { CheckCircle } from "lucide-react";
+import { motion } from "framer-motion";
 
 const Brands = () => {
   // Brand data with SVG logos for better SEO and performance
@@ -131,7 +132,13 @@ const Brands = () => {
     >
       <div className="container mx-auto px-4 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <motion.div
+          className="text-center mb-16"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.6 }}
+        >
           <div className="inline-flex items-center bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium mb-6">
             <CheckCircle className="h-4 w-4 mr-2" />
             Supported Brands
@@ -148,7 +155,7 @@ const Brands = () => {
             leading manufacturers. No matter the brand, we have the expertise to
             get it fixed.
           </p>
-        </div>
+        </motion.div>
 
         {/* Clean Logo Marquee Section */}
         <div className="relative mb-20">
@@ -188,8 +195,14 @@ const Brands = () => {
         </div>
 
         {/* Additional Info */}
-        <div className="mt-20">
-          <div className="bg-gradient-to-r from-blue-50 to-blue-100 p-8 lg:p-12 rounded-2xl">
+        <motion.div
+          className="mt-20"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.7 }}
+        >
+          <div className="bg-gradient-to-r from-blue-50 to-blue-100 p-8 lg:p-12 rounded-2xl shadow-lg">
             <div className="grid lg:grid-cols-3 gap-8 items-center">
               <div className="text-center lg:text-left">
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
@@ -221,25 +234,24 @@ const Brands = () => {
                   We service many more brands not listed here. Contact us for
                   any appliance repair needs.
                 </p>
-                <button
-                  onClick={() => {
-                    const element = document.getElementById("contact");
-                    if (element) {
-                      element.scrollIntoView({ behavior: "smooth" });
-                    }
-                  }}
-                  className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200 transform hover:scale-105"
+                <a
+                  href="tel:+8878804847"
+                  aria-label="Contact us for appliance repair needs"
+                  className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200 transform hover:scale-105"
                 >
                   Contact Us
-                </button>
+                </a>
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* Trust Indicators */}
         <div className="mt-16 grid md:grid-cols-3 gap-8 text-center">
-          <div className="p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+          <motion.div 
+            className="p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
+            initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0 }}
+          >
             <div className="text-4xl font-bold text-blue-600 mb-2">15+</div>
             <div className="text-lg font-semibold text-gray-800 mb-2">
               Years Experience
@@ -247,9 +259,12 @@ const Brands = () => {
             <p className="text-gray-600 text-sm">
               Servicing all major TV brands
             </p>
-          </div>
+          </motion.div>
 
-          <div className="p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+          <motion.div 
+            className="p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
+            initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.2 }}
+          >
             <div className="text-4xl font-bold text-green-600 mb-2">50+</div>
             <div className="text-lg font-semibold text-gray-800 mb-2">
               Xpert Technicians
@@ -257,9 +272,12 @@ const Brands = () => {
             <p className="text-gray-600 text-sm">
               Factory-trained professionals
             </p>
-          </div>
+          </motion.div>
 
-          <div className="p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+          <motion.div 
+            className="p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
+            initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.4 }}
+          >
             <div className="text-4xl font-bold text-orange-600 mb-2">90</div>
             <div className="text-lg font-semibold text-gray-800 mb-2">
               Day Warranty
@@ -267,7 +285,7 @@ const Brands = () => {
             <p className="text-gray-600 text-sm">
               On all repairs and replacements
             </p>
-          </div>
+          </motion.div>
         </div>
       </div>
 
