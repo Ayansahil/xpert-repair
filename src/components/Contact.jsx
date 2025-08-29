@@ -148,7 +148,7 @@ const Contact = () => {
             {/* Contact Methods */}
             <div className="space-y-6">
               <a
-                href="tel:+8878804847"
+                href="tel:+918878804847"
                 className="flex items-center space-x-4 p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 group"
               >
                 <div className="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center group-hover:bg-blue-600 transition-colors duration-300">
@@ -156,13 +156,13 @@ const Contact = () => {
                 </div>
                 <div>
                   <h2 className="font-semibold text-gray-900 mb-1">Call Now</h2>
-                  <p className="text-gray-600">8878804847</p>
+                  <p className="text-gray-600">+91-887-880-4847</p>
                   <p className="text-sm text-blue-600">Click to call now</p>
                 </div>
               </a>
 
               <a
-                href={`https://wa.me/8878804847?text=${whatsappMessage}`}
+                href={`https://wa.me/918878804847?text=${whatsappMessage}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center space-x-4 p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 group"
