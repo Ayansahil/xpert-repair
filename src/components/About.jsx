@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 const About = () => {
   const stats = [
     { icon: Users, number: '10,000+', label: 'Happy Customers' },
-    { icon: Clock, number: '15+', label: 'Years Experience' },
+    { icon: Clock, number: '7+', label: 'Years Experience' },
     { icon: Award, number: '50+', label: 'Xpert Technicians' },
     { icon: Shield, number: '90-Day', label: 'Warranty Coverage' }
   ];
@@ -32,8 +32,8 @@ const About = () => {
             </h1>
             
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-              For over 15 years, Xpert Repair has been the go-to choice for homeowners 
-              who demand quality appliance repair services. Our team of certified technicians 
+              For over 7 years, Xpert Repair has been the go-to choice for homeowners in Bhopal
+              who demand quality appliance repair services like washing machine repair, LED TV repair, fridge repair, and AC repair. Our team of certified technicians 
               combines extensive experience with cutting-edge diagnostic tools to deliver 
               solutions that last.
             </p>
@@ -41,7 +41,7 @@ const About = () => {
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
               We understand that appliance breakdowns are more than just inconveniences—they 
               disrupt your daily routine. That&apos;s why we&apos;re committed to providing fast, 
-              reliable, and affordable repairs with a 90-day warranty on all our work.
+              reliable, and affordable repairs in Bhopal with a 90-day warranty on all our work.
             </p>
 
             <div className="grid grid-cols-2 gap-4 mb-8">
@@ -81,8 +81,8 @@ const About = () => {
             <div className="bg-gray-50 p-6 rounded-2xl">
               <h2 className="font-semibold text-gray-800 mb-3">Our Mission</h2>
               <p className="text-gray-600">
-                To provide exceptional appliance repair services that exceed customer 
-                expectations while building lasting relationships based on trust, 
+                To provide Bhopal&apos;s best service for appliance repairs, exceeding customer 
+                expectations and building lasting relationships based on trust, 
                 reliability, and outstanding value.
               </p>
             </div>

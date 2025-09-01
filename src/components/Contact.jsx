@@ -178,7 +178,7 @@ const Contact = () => {
               </a>
 
               <a
-                href="mailto:contact@xpertrepair.com?subject=Appliance Repair Service Request"
+                href="mailto:bhopalrepair2025@gmail.com?subject=Appliance Repair Service Request"
                 className="flex items-center space-x-4 p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 group"
               >
                 <div className="w-14 h-14 bg-purple-100 rounded-xl flex items-center justify-center group-hover:bg-purple-600 transition-colors duration-300">
@@ -186,7 +186,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h2 className="font-semibold text-gray-900 mb-1">Email</h2>
-                  <p className="text-gray-600">contact@xpertrepair.com</p>
+                  <p className="text-gray-600">bhopalrepair2025@gmail.com</p>
                   <p className="text-sm text-purple-600">Send us an email</p>
                 </div>
               </a>

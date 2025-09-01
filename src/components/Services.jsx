@@ -50,9 +50,9 @@ const Services = () => {
       slug: "refrigerator-repair",
       icon: Refrigerator,
       description:
-        "Xpert Repair provides professional refrigerator repair in Bhopal for cooling problems, ice maker issues, and compressor repairs.",
-      image: "images/services/refrigerator-repair.jpg",
-      alt: "Refrigerator Repair Bhopal",
+        "Our refrigerator repair technician in Bhopal handles cooling problems, ice maker issues, and complex refrigerator compressor repair.",
+      image: "images/services/refrigerator-repair.jpg", 
+      alt: "Refrigerator compressor repair technician Bhopal",
     },
     {
       id: 5,
@@ -90,9 +90,9 @@ const Services = () => {
       slug: "geyser-repair",
       icon: ShowerHead,
       description:
-        "Xpert Repair provides expert geyser repair in Bhopal with fast solutions for heating problems, water flow issues, and installation services.",
-      image: "images/services/geyser-repair.jpg",
-      alt: "Geyser Repair Bhopal",
+        "Our geyser repair service technician in Bhopal provides fast solutions for heating problems, water flow issues, and installation.",
+      image: "images/services/geyser-repair.jpg", 
+      alt: "Geyser repair service technician Bhopal",
     },
   ];
 

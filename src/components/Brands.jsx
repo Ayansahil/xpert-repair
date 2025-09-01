@@ -147,12 +147,12 @@ const Brands = () => {
           <h2 className="text-3xl lg:text-5xl font-extrabold text-gray-900 mb-8 leading-tight">
             LCD/LED Plasma
             <span className="text-blue-500 block">TV Brands</span>
-            <span className="text-gray-800">We Repairs</span>
+            <span className="text-gray-800">We Repair in Bhopal</span>
           </h2>
 
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-4">
-            Our certified technicians are trained to work on appliances from all
-            leading manufacturers. No matter the brand, we have the expertise to
+            Our certified technicians in Bhopal are trained to work on appliances from all
+            leading manufacturers. From washing machine and fridge repair to microwave and geyser repair, no matter the brand, we have the expertise to
             get it fixed.
           </p>
         </motion.div>
@@ -252,7 +252,7 @@ const Brands = () => {
             className="p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
             initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0 }}
           >
-            <div className="text-4xl font-bold text-blue-600 mb-2">15+</div>
+            <div className="text-4xl font-bold text-blue-600 mb-2">7+</div>
             <div className="text-lg font-semibold text-gray-800 mb-2">
               Years Experience
             </div>

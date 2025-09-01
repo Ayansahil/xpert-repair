@@ -8,6 +8,7 @@ const MicrowaveOvenRepair = () => {
       <Helmet>
         <title>Microwave Oven Repair Bhopal | Solo, Grill, Convection | Xpert Repair</title>
         <meta name="description" content="Expert microwave oven repair in Bhopal for all brands like LG, Samsung, IFB. We fix heating, sparking & PCB issues. Same-day service in Kolar, MP Nagar. Call: +918878804847." />
+        <meta name="keywords" content="Microwave repair bhopal, microwave oven repair bhopal, lg microwave repair bhopal, samsung microwave repair bhopal, ifb microwave repair bhopal, Kolar Road 462042, Arera Colony, MP Nagar" />
         <link rel="canonical" href="https://xpertrepair.com/services/microwave-oven-repair" />
         <meta property="og:title" content="Microwave Oven Repair Service in Bhopal | Xpert Repair" />
         <meta property="og:description" content="Fast, affordable microwave repair for solo, grill, and convection models in Bhopal. We service all brands with a 6-month warranty." />
@@ -34,6 +35,7 @@ const MicrowaveOvenRepair = () => {
 
         <p className="text-xl text-[#939393] mb-6 leading-relaxed">
           Our dedicated team of microwave engineers is available from <strong className="text-blue-500 font-semibold">8 AM to 9 PM, 7 days a week</strong>. Our local oven technicians are always near you in Bhopal, ready to come to your home or business. If you&apos;re searching for professional microwave oven repairs in areas like Arera Colony, Kolar, or MP Nagar, we are your best choice.
+          We serve all localities including Anand Nagar (462021), Ayodhaya Nagar (462041), Bairagarh (462030), Misrod (462026), and South T.T. Nagar (462003).
         </p>
         <p className="text-lg text-[#939393] mb-6 leading-relaxed">
           Call us for same-day repair, installation, and maintenance for all brands of convection, grill, solo, built-in, and commercial-grade microwaves and ovens in Bhopal. We make microwave repair easier by connecting you with the best local technicians.

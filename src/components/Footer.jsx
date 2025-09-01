@@ -1,19 +1,34 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Phone, Mail, MapPin, Clock, Facebook, Twitter, Instagram, Wrench } from 'lucide-react';
+import React from "react";
+import { Link } from "react-router-dom";
+import {
+  Phone,
+  Mail,
+  MapPin,
+  Clock,
+  Facebook,
+  Twitter,
+  Instagram,
+  Wrench,
+} from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const serviceLinks = [
-    { name: 'Refrigerator Repair', path: '/services/refrigerator-repair' },
-    { name: 'Washing Machine Repair', path: '/services/washing-machine-repair' },
-    { name: 'Air Conditioner Repair', path: '/services/air-conditioner-repair' },
-    { name: 'LED & LCD TV Repair', path: '/services/led-lcd-tv-repair' },
-    { name: 'Microwave Oven Repair', path: '/services/microwave-oven-repair' },
-    { name: 'RO Purifier Repair', path: '/services/ro-purifier-repair' },
-    { name: 'Geyser Repair', path: '/services/geyser-repair' },
-    {name: 'Plasma Tv Repair', path: '/services/plasma-tv-repair'}
+    { name: "Refrigerator Repair", path: "/services/refrigerator-repair" },
+    {
+      name: "Washing Machine Repair",
+      path: "/services/washing-machine-repair",
+    },
+    {
+      name: "Air Conditioner Repair",
+      path: "/services/air-conditioner-repair",
+    },
+    { name: "LED & LCD TV Repair", path: "/services/led-lcd-tv-repair" },
+    { name: "Microwave Oven Repair", path: "/services/microwave-oven-repair" },
+    { name: "RO Purifier Repair", path: "/services/ro-purifier-repair" },
+    { name: "Geyser Repair", path: "/services/geyser-repair" },
+    { name: "Plasma Tv Repair", path: "/services/plasma-tv-repair" },
   ];
 
   return (
@@ -31,29 +46,30 @@ const Footer = () => {
                 <p className="text-gray-400 text-sm">Home Appliance Services</p>
               </div>
             </Link>
-            
+
             <p className="text-gray-400 leading-relaxed mb-6">
-              Your trusted partner for all home appliance repairs. 
-              Professional service, fair pricing, and customer satisfaction guaranteed.
+              Your trusted partner for all home appliance repairs in Bhopal. We
+              aim to provide Bhopal&apos;s best service with fair pricing and
+              guaranteed customer satisfaction.
             </p>
-            
+
             <div className="flex space-x-4">
-              <a 
-                href="#" 
+              <a
+                href="#"
                 aria-label="Follow Xpert Repair on Facebook"
                 className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors duration-200"
               >
                 <Facebook className="h-5 w-5" />
               </a>
-              <a 
-                href="#" 
+              <a
+                href="#"
                 aria-label="Follow Xpert Repair on Twitter"
                 className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-400 transition-colors duration-200"
               >
                 <Twitter className="h-5 w-5" />
               </a>
-              <a 
-                href="#" 
+              <a
+                href="#"
                 aria-label="Follow Xpert Repair on Instagram"
                 className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-pink-600 transition-colors duration-200"
               >
@@ -130,7 +146,7 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-6">Contact Info</h3>
             <div className="space-y-4">
-              <a 
+              <a
                 href="tel:+8878804847"
                 aria-label="Call Xpert Repair at (123) 456-7890 for 24/7 emergency appliance repair service"
                 className="flex items-start space-x-3 text-gray-400 hover:text-white transition-colors duration-200 group"
@@ -141,19 +157,19 @@ const Footer = () => {
                   <div className="text-sm">24/7 Emergency Service</div>
                 </div>
               </a>
-              
-              <a 
-                href="mailto:contact@Xpertrepair.com"
-                aria-label="Email Xpert Repair at contact@Xpertrepair.com for free appliance repair quote"
+
+              <a
+                href="mailto:bhopalrepair2025@gmail.com"
+                aria-label="Email Xpert Repair at bhopalrepair2025@gmail.com for free appliance repair quote"
                 className="flex items-start space-x-3 text-gray-400 hover:text-white transition-colors duration-200"
               >
                 <Mail className="h-5 w-5 mt-1 text-green-500" />
                 <div>
-                  <div className="font-medium">contact@Xpertrepair.com</div>
+                  <div className="font-medium">bhopalrepair2025@gmail.com</div>
                   <div className="text-sm">Get your free quote</div>
                 </div>
               </a>
-              
+
               <div className="flex items-start space-x-3 text-gray-400">
                 <MapPin className="h-5 w-5 mt-1 text-orange-500" />
                 <div>
@@ -161,7 +177,7 @@ const Footer = () => {
                   <div className="text-sm">We come to your location</div>
                 </div>
               </div>
-              
+
               <div className="flex items-start space-x-3 text-gray-400">
                 <Clock className="h-5 w-5 mt-1 text-purple-500" />
                 <div>
@@ -173,32 +189,11 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Bottom Section */}
-        <div className="border-t border-gray-800 mt-12 pt-8">
-          <div className="flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
-            <div className="text-gray-400 text-sm text-center lg:text-left">
-              © {currentYear} Xpert Repair. All rights reserved. Licensed & Insured.
-            </div>
-            
-            <div className="flex items-center space-x-6 text-sm text-gray-400">
-              <a href="#" className="hover:text-white transition-colors duration-200">
-                Privacy Policy
-              </a>
-              <a href="#" className="hover:text-white transition-colors duration-200">
-                Terms of Service
-              </a>
-              <div className="text-blue-400">
-                Website by <span className="font-semibold">Ayan Sahil</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
         {/* Trust Badges */}
         <div className="mt-8 pt-8 border-t border-gray-800">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div className="bg-gray-800 p-4 rounded-lg">
-              <div className="text-2xl font-bold text-blue-500 mb-1">15+</div>
+              <div className="text-2xl font-bold text-blue-500 mb-1">7+</div>
               <div className="text-xs text-gray-400">Years Experience</div>
             </div>
             <div className="bg-gray-800 p-4 rounded-lg">
@@ -206,12 +201,42 @@ const Footer = () => {
               <div className="text-xs text-gray-400">Happy Customers</div>
             </div>
             <div className="bg-gray-800 p-4 rounded-lg">
-              <div className="text-2xl font-bold text-orange-500 mb-1">24/7</div>
+              <div className="text-2xl font-bold text-orange-500 mb-1">
+                24/7
+              </div>
               <div className="text-xs text-gray-400">Emergency Service</div>
             </div>
             <div className="bg-gray-800 p-4 rounded-lg">
               <div className="text-2xl font-bold text-purple-500 mb-1">90</div>
               <div className="text-xs text-gray-400">Day Warranty</div>
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom Section */}
+        <div className="border-t border-gray-800 mt-12 pt-8">
+          <div className="flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
+            <div className="text-gray-400 text-sm text-center lg:text-left">
+              © {currentYear} Xpert Repair. All rights reserved. Licensed &
+              Insured.
+            </div>
+
+            <div className="flex items-center space-x-6 text-sm text-gray-400">
+              <a
+                href="#"
+                className="hover:text-white transition-colors duration-200"
+              >
+                Privacy Policy
+              </a>
+              <a
+                href="#"
+                className="hover:text-white transition-colors duration-200"
+              >
+                Terms of Service
+              </a>
+              <div className="text-blue-400">
+                Website by <span className="font-semibold">Ayan Sahil</span>
+              </div>
             </div>
           </div>
         </div>
