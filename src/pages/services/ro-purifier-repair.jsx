@@ -13,9 +13,13 @@ const ROPurifierRepair = () => {
           name="description"
           content="Best RO repair service in Bhopal for Kent, Aquaguard & all brands. We fix leakage, filter & purification issues. Same-day service in Bhopal. Call: +918878804847."
         />
+        <meta
+          name="keywords"
+          content="ro repair bhopal, water purifier service bhopal, kent ro service bhopal, aquaguard service near me, ro installation bhopal, ro filter change, water purifier repair bhopal, livpure ro service"
+        />
         <link
           rel="canonical"
-          href="https://xpertrepair.com/services/ro-purifier-repair"
+          href="https://bhopalrepair.in/services/ro-purifier-repair"
         />
         <meta
           property="og:title"
@@ -23,12 +27,23 @@ const ROPurifierRepair = () => {
         />
         <meta
           property="og:description"
-          content="Fast, affordable RO repair, installation, and filter change services in Bhopal. We service all brands with a 6-month warranty."
+          content="Fast, affordable RO repair, installation, and filter change services in Bhopal. We service all major brands."
         />
         <meta
           property="og:url"
-          content="https://xpertrepair.com/services/ro-purifier-repair"
+          content="https://bhopalrepair.in/services/ro-purifier-repair"
         />
+        <meta property="og:image" content="https://bhopalrepair.in/og-image.jpg" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "serviceType": "RO Purifier Repair",
+            "provider": { "@type": "LocalBusiness", "name": "Xpert Home Appliance Repair" },
+            "areaServed": { "@type": "City", "name": "Bhopal" },
+            "description": "Professional RO water purifier repair and service in Bhopal for all brands. We handle filter changes, leakage, and all other issues."
+          })}
+        </script>
       </Helmet>
       <motion.div
         id="ro-repair-page"
@@ -163,8 +178,8 @@ const ROPurifierRepair = () => {
             before starting any work.
           </li>
           <li className="text-[#747474]">
-            Service Warranty: We provide a 6-month warranty on our repairs for
-            your peace of mind.
+            Quality Service: We focus on providing reliable repairs for your
+            peace of mind.
           </li>
         </ul>
 

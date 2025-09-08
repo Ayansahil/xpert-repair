@@ -7,12 +7,13 @@ const MicrowaveOvenRepair = () => {
     <>
       <Helmet>
         <title>Microwave Oven Repair Bhopal | Solo, Grill, Convection | Xpert Repair</title>
-        <meta name="description" content="Expert microwave oven repair in Bhopal for all brands like LG, Samsung, IFB. We fix heating, sparking & PCB issues. Same-day service in Kolar, MP Nagar. Call: +918878804847." />
+        <meta name="description" content="Expert microwave oven repair in Bhopal for all brands like LG, Samsung, IFB. We fix heating, sparking & PCB issues. Same-day service in Kolar, MP Nagar. Call: (887)-880-4847." />
         <meta name="keywords" content="Microwave repair bhopal, microwave oven repair bhopal, lg microwave repair bhopal, samsung microwave repair bhopal, ifb microwave repair bhopal, Kolar Road 462042, Arera Colony, MP Nagar" />
-        <link rel="canonical" href="https://xpertrepair.com/services/microwave-oven-repair" />
+        <link rel="canonical" href="https://bhopalrepair.in/services/microwave-oven-repair" />
         <meta property="og:title" content="Microwave Oven Repair Service in Bhopal | Xpert Repair" />
         <meta property="og:description" content="Fast, affordable microwave repair for solo, grill, and convection models in Bhopal. We service all brands with a 6-month warranty." />
-        <meta property="og:url" content="https://xpertrepair.com/services/microwave-oven-repair" />
+        <meta property="og:url" content="https://bhopalrepair.in/services/microwave-oven-repair" />
+        <meta property="og:image" content="https://bhopalrepair.in/og-image.jpg" />
       </Helmet>
       <motion.div
         id="microwave-repair-page"
@@ -90,7 +91,7 @@ const MicrowaveOvenRepair = () => {
           </p>
           <p className="text-lg">
             <span className="text-[#072C42] font-bold">Call for Service: </span>
-            <a href="tel:+918878804847" className="text-blue-600 font-bold hover:underline">+91-887-880-4847</a>
+            <a href="tel:+918878804847" className="text-blue-600 font-bold hover:underline">(887)-880-4847</a>
           </p>
           <p className="text-sm text-[#939393] mt-2">
             <span className="text-[#072C42] font-extrabold">Service Hours:</span> Monday to Sunday, 8:00 AM - 9:00 PM

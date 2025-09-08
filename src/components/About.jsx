@@ -1,13 +1,13 @@
 import React from 'react';
-import { Award, Users, Clock, Shield } from 'lucide-react';
+import { Award, Users, Clock, CheckCircle } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const About = () => {
   const stats = [
-    { icon: Users, number: '10,000+', label: 'Happy Customers' },
-    { icon: Clock, number: '7+', label: 'Years Experience' },
-    { icon: Award, number: '50+', label: 'Xpert Technicians' },
-    { icon: Shield, number: '90-Day', label: 'Warranty Coverage' }
+    { icon: Users, number: "10,000+", label: "Happy Customers" },
+    { icon: Clock, number: "7+", label: "Years Experience" },
+    { icon: Award, number: "100%", label: "Verified Technicians" },
+    { icon: CheckCircle, number: "Quality", label: "Assured Service" },
   ];
 
   return (
@@ -40,8 +40,8 @@ const About = () => {
             
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
               We understand that appliance breakdowns are more than just inconveniences—they 
-              disrupt your daily routine. That&apos;s why we&apos;re committed to providing fast, 
-              reliable, and affordable repairs in Bhopal with a 90-day warranty on all our work.
+              disrupt your daily routine. That&apos;s why we&apos;re committed to providing fast,
+              reliable, and affordable repairs in Bhopal.
             </p>
 
             <div className="grid grid-cols-2 gap-4 mb-8">

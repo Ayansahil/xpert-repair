@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Phone, Clock, Star, CheckCircle } from 'lucide-react';
+import { Phone, Clock, Star, CheckCircle, ShieldCheck } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -37,7 +37,7 @@ const Hero = () => {
               <span className="font-semibold text-gray-800"> Same-day service available!</span>
             </motion.p>
 
-            <div className="grid sm:grid-cols-3 gap-6 mb-8">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-8">
               <div className="flex items-center justify-center lg:justify-start space-x-2">
                 <CheckCircle className="h-5 w-5 text-green-500" />
                 <span className="text-gray-700">Licensed & Insured</span>
@@ -47,8 +47,8 @@ const Hero = () => {
                 <span className="text-gray-700">24/7 Emergency</span>
               </div>
               <div className="flex items-center justify-center lg:justify-start space-x-2">
-                <CheckCircle className="h-5 w-5 text-green-500" />
-                <span className="text-gray-700">90-Day Warranty</span>
+                <ShieldCheck className="h-5 w-5 text-yellow-500" />
+                <span className="text-gray-700">Quality Assured</span>
               </div>
             </div>
 
@@ -64,12 +64,12 @@ const Hero = () => {
                 Get Free Quote
               </Link>
                 <a
-                  href="tel:+8878804847"
-                  aria-label="Call Xpert Repair at (887) 880-4847 for immediate appliance repair service"
+                  href="tel:+918878804847"
+                  aria-label="Call Xpert Repair at (887)-880-4847 for immediate appliance repair service"
                   className="flex items-center justify-center space-x-2 border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-600 hover:text-white transition-all duration-200"
                 >
                   <Phone className="h-5 w-5" />
-                  <span>Call (887) 880-4847</span>
+                  <span>Call (887)-880-4847</span>
                 </a>
             </motion.div>
           </div>
@@ -101,13 +101,13 @@ const Hero = () => {
                   <h3 className="font-semibold text-gray-800 mb-2">Transparent Fair Pricing</h3>
                   <p className="text-sm text-gray-600">No hidden fees</p>
                 </div>
-                
+
                 <div className="bg-white p-6 rounded-2xl shadow-lg transform -rotate-2 hover:rotate-0 transition-transform duration-300">
                   <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
-                    <span className="text-2xl" role="img" aria-label="Shield">🛡️</span>
+                    <span className="text-2xl" role="img" aria-label="Wrench">⚙️</span>
                   </div>
-                  <h3 className="font-semibold text-gray-800 mb-2">90-Day Warranty</h3>
-                  <p className="text-sm text-gray-600">90-day guarantee</p>
+                  <h3 className="font-semibold text-gray-800 mb-2">Genuine Parts</h3>
+                  <p className="text-sm text-gray-600">Only OEM parts used</p>
                 </div>
               </div>
             </div>

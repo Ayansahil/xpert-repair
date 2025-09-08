@@ -8,12 +8,13 @@ const PlasmaTvRepair = () => {
     <>
       <Helmet>
         <title>Plasma TV Repair in Bhopal | Expert Service for All Brands | Xpert Repair</title>
-        <meta name="description" content="Professional Plasma TV repair in Bhopal. We fix common plasma issues like screen burn-in, dead pixels, sound problems, and power failure. Samsung, LG, Panasonic specialists. 6-month warranty." />
+        <meta name="description" content="Professional Plasma TV repair in Bhopal. We fix common plasma issues like screen burn-in, dead pixels, sound problems, and power failure. Samsung, LG, Panasonic specialists." />
         <meta name="keywords" content="plasma tv repair bhopal, tv repair bhopal, samsung plasma tv repair, lg plasma tv repair, panasonic plasma tv repair, Anand Nagar 462021, Arera Hills 462011, Kolar Road 462042" />
-        <link rel="canonical" href="https://xpertrepair.com/services/plasma-tv-repair" />
+        <link rel="canonical" href="https://bhopalrepair.in/services/plasma-tv-repair" />
         <meta property="og:title" content="Plasma TV Repair in Bhopal | Xpert Repair" />
-        <meta property="og:description" content="Fast, affordable, and reliable Plasma TV repair services in Bhopal. We offer a 6-month warranty on all repairs." />
-        <meta property="og:url" content="https://xpertrepair.com/services/plasma-tv-repair" />
+        <meta property="og:description" content="Fast, affordable, and reliable Plasma TV repair services in Bhopal. Customer satisfaction guaranteed." />
+        <meta property="og:url" content="https://bhopalrepair.in/services/plasma-tv-repair" />
+        <meta property="og:image" content="https://bhopalrepair.in/og-image.jpg" />
       </Helmet>
       <motion.div
         id="plasma-tv-repair-page"
@@ -94,7 +95,7 @@ const PlasmaTvRepair = () => {
       <ul className="list-disc list-inside text-lg text-[#939393] mb-6 space-y-4">
         <li className="text-[#747474]">Plasma TV Specialists -Technicians trained specifically on plasma display technology.</li>
         <li className="text-[#747474]">Genuine Parts Only - We use only original manufacturer parts</li>
-        <li className="text-[#747474]">6-Month Warranty - Comprehensive warranty on all repairs</li>
+        <li className="text-[#747474]">Satisfaction Guaranteed - We stand by the quality of our work.</li>
         <li className="text-[#747474]">Free Home Visit - No charge for inspection and diagnosis</li>
         <li className="text-[#747474]">Certified Technicians - Factory-trained professionals</li>
         <li className="text-[#747474]">Affordable Pricing - Transparent pricing with no hidden costs</li>

@@ -10,10 +10,11 @@ const WashingMachineRepair = () => {
         <title>Washing Machine Repair Bhopal | Top & Front Load | Xpert Repair</title>
         <meta name="description" content="Best washing machine repair in Bhopal for top & front load, semi & fully automatic models. We service LG, Samsung, IFB, etc. Same-day service. Call Xpert Repair!" />
         <meta name="keywords" content="Washing machine repair bhopal, washing machine service bhopal, front load washing machine repair bhopal, top load washing machine repair bhopal, lg washing machine repair bhopal, samsung washing machine repair bhopal, ifb washing machine repair bhopal, washing machine near me technician, Kolar Road 462042, Anand Nagar 462021, Arera Hills 462011" />
-        <link rel="canonical" href="https://xpertrepair.com/services/washing-machine-repair" />
-        <meta property="og:title" content="Washing Machine Repair Service in Bhopal | Xpert Repair" />
-        <meta property="og:description" content="Fast, affordable washing machine & dryer repair, installation, and service in Bhopal. We fix all brands with a 6-month warranty." />
-        <meta property="og:url" content="https://xpertrepair.com/services/washing-machine-repair" />
+        <link rel="canonical" href="https://bhopalrepair.in/services/washing-machine-repair" />
+        <meta property="og:title" content="Washing Machine Repair Service in Bhopal | Xpert Repair" /> 
+        <meta property="og:description" content="Fast, affordable washing machine & dryer repair, installation, and service in Bhopal. We fix all brands." />
+        <meta property="og:url" content="https://bhopalrepair.in/services/washing-machine-repair" />
+        <meta property="og:image" content="https://bhopalrepair.in/og-image.jpg" />
       </Helmet>
       <motion.div
         id="washing-machine-repair-page"
@@ -100,7 +101,6 @@ const WashingMachineRepair = () => {
           <li className="text-[#747474]">All Brands Repaired: We service LG, Samsung, Whirlpool, IFB, and all other major brands.</li>
           <li className="text-[#747474]">Same-Day Service: Quick diagnosis and repair, often within a few hours.</li>
           <li className="text-[#747474]">Genuine Parts: We use only original manufacturer parts for long-lasting repairs.</li>
-          <li className="text-[#747474]">6-Month Warranty: A comprehensive warranty on all repairs and services.</li>
           <li className="text-[#747474]">Certified Technicians: Our professionals are experienced and company-trained.</li>
           <li className="text-[#747474]">Affordable & Transparent Pricing: No hidden charges, with clear estimates provided upfront.</li>
         </ul>

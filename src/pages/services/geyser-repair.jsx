@@ -8,10 +8,25 @@ const GeyserRepair = () => {
       <Helmet>
         <title>Geyser Repair & Service Bhopal | Water Heater | Xpert Repair</title>
         <meta name="description" content="Expert geyser repair and installation service in Bhopal for all brands like Bajaj, Havells, AO Smith. We fix heating & water flow issues. Same-day service. Call: +918878804847." />
-        <link rel="canonical" href="https://xpertrepair.com/services/geyser-repair" />
+        <meta name="keywords" content="geyser repair bhopal, geyser repair service technician, water heater repair bhopal, geyser installation bhopal, bajaj geyser service, havells geyser repair, electric geyser repair near me, racold geyser service, ao smith geyser repair" />
+        <link rel="canonical" href="https://bhopalrepair.in/services/geyser-repair" />
         <meta property="og:title" content="Geyser & Water Heater Repair Service in Bhopal | Xpert Repair" />
-        <meta property="og:description" content="Fast, affordable geyser repair, installation, and service in Bhopal. We fix all instant and storage geyser models with a 6-month warranty." />
-        <meta property="og:url" content="https://xpertrepair.com/services/geyser-repair" />
+        <meta property="og:description" content="Fast, affordable geyser repair, installation, and service in Bhopal. We fix all instant and storage geyser models." />
+        <meta property="og:url" content="https://bhopalrepair.in/services/geyser-repair" />
+        <meta property="og:image" content="https://bhopalrepair.in/og-image.jpg" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "serviceType": "Geyser Repair",
+            "provider": {
+              "@type": "LocalBusiness",
+              "name": "Xpert Home Appliance Repair"
+            },
+            "areaServed": { "@type": "City", "name": "Bhopal" },
+            "description": "Professional geyser and water heater repair service in Bhopal for all brands and models, including instant and storage geysers."
+          })}
+        </script>
       </Helmet>
       <motion.div
         id="geyser-repair-page"
@@ -87,7 +102,7 @@ Xpert Repair offers reliable and professional Geyser repair services in Bhopal, 
           <li className="text-[#747474]">Expert Technicians: Our team is trained to handle all types and brands of geysers safely.</li>
           <li className="text-[#747474]">Genuine Spare Parts: We use only authentic parts to ensure the safety and longevity of your appliance.</li>
           <li className="text-[#747474]">Affordable & Transparent Pricing: We provide clear cost estimates with no hidden fees.</li>
-          <li className="text-[#747474]">6-Month Service Warranty: All our repairs come with a warranty for your complete peace of mind.</li>
+          <li className="text-[#747474]">Customer Satisfaction: Our goal is to ensure you are happy with our service.</li>
         </ul>
 
         <div className="p-6 rounded-lg border border-gray-200 bg-blue-50">

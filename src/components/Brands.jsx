@@ -221,9 +221,7 @@ const Brands = () => {
                 <h4 className="text-lg font-semibold text-gray-900 mb-2">
                   Quality Assured
                 </h4>
-                <p className="text-gray-600 text-sm">
-                  90-day warranty on all repairs
-                </p>
+                <p className="text-gray-600 text-sm">Satisfaction Guaranteed</p>
               </div>
 
               <div className="text-center lg:text-right">
@@ -235,7 +233,7 @@ const Brands = () => {
                   any appliance repair needs.
                 </p>
                 <a
-                  href="tel:+8878804847"
+                  href="tel:+918878804847"
                   aria-label="Contact us for appliance repair needs"
                   className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200 transform hover:scale-105"
                 >
@@ -265,12 +263,14 @@ const Brands = () => {
             className="p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
             initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <div className="text-4xl font-bold text-green-600 mb-2">50+</div>
+            <div className="text-4xl font-bold text-green-600 mb-2">
+              10,000+
+            </div>
             <div className="text-lg font-semibold text-gray-800 mb-2">
-              Xpert Technicians
+              Happy Customers
             </div>
             <p className="text-gray-600 text-sm">
-              Factory-trained professionals
+              Trusted by thousands in Bhopal
             </p>
           </motion.div>
 
@@ -278,12 +278,12 @@ const Brands = () => {
             className="p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
             initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.4 }}
           >
-            <div className="text-4xl font-bold text-orange-600 mb-2">90</div>
+            <div className="text-4xl font-bold text-orange-600 mb-2">Fair</div>
             <div className="text-lg font-semibold text-gray-800 mb-2">
-              Day Warranty
+              Transparent Pricing
             </div>
             <p className="text-gray-600 text-sm">
-              On all repairs and replacements
+              No hidden costs or fees
             </p>
           </motion.div>
         </div>

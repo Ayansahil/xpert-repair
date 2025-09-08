@@ -7,13 +7,14 @@ const LedLcdTvRepair = () => {
   return (
     <>
       <Helmet>
-        <title>LED/LCD TV Repair in Bhopal | Fast & Reliable Service | Xpert Repair</title>
-        <meta name="description" content="Expert LED & LCD TV repair in Bhopal. We fix screen, sound, and power issues for all brands like Samsung, LG, Sony. Same-day service, 6-month warranty. Call Xpert Repair now!" />
+        <title>LED/LCD TV Repair in Bhopal | Fast & Reliable Service | Xpert Repair</title> 
+        <meta name="description" content="Expert LED & LCD TV repair in Bhopal. We fix screen, sound, and power issues for all brands like Samsung, LG, Sony. Same-day service. Call Xpert Repair now!" />
         <meta name="keywords" content="Led tv repair bhopal, lcd tv repair bhopal, tv repair bhopal, samsung tv repair bhopal, lg tv repair bhopal, sony tv repair bhopal, LED TV repair technician, LED TV display repair, LED TV motherboard repair in bhopal, Anand Nagar, Arera Hills, Kolar Road, 462021, 462011, 462042" />
-        <link rel="canonical" href="https://xpertrepair.com/services/led-lcd-tv-repair" />
+        <link rel="canonical" href="https://bhopalrepair.in/services/led-lcd-tv-repair" />
         <meta property="og:title" content="LED/LCD TV Repair in Bhopal | Xpert Repair" />
-        <meta property="og:description" content="Fast, affordable, and reliable LED/LCD TV repair services in Bhopal. We offer a 6-month warranty on all repairs." />
-        <meta property="og:url" content="https://xpertrepair.com/services/led-lcd-tv-repair" />
+        <meta property="og:description" content="Fast, affordable, and reliable LED/LCD TV repair services in Bhopal." />
+        <meta property="og:url" content="https://bhopalrepair.in/services/led-lcd-tv-repair" />
+        <meta property="og:image" content="https://bhopalrepair.in/og-image.jpg" />
       </Helmet>
       <motion.div
         id="led-lcd-tv-repair-page"
@@ -126,7 +127,6 @@ const LedLcdTvRepair = () => {
       <ul className="list-disc list-inside text-lg text-[#939393] mb-6 space-y-4">
         <li className="text-[#747474]">Same Day Service - Quick diagnosis and repair within 24 hours</li>
         <li className="text-[#747474]">Genuine Parts Only - We use only original manufacturer parts</li>
-        <li className="text-[#747474]">6 Month Warranty - Comprehensive warranty on all repairs</li>
         <li className="text-[#747474]">Free Home Visit - No charge for inspection and diagnosis</li>
         <li className="text-[#747474]">Certified Technicians - Factory-trained professionals</li>
         <li className="text-[#747474]">Affordable Pricing - Transparent pricing with no hidden costs</li>

@@ -8,11 +8,26 @@ const RefrigeratorRepair = () => {
     <>
       <Helmet>
         <title>Refrigerator Repair Bhopal | Fridge Service & Gas Filling | Xpert Repair</title>
-        <meta name="description" content="Expert refrigerator & fridge repair in Bhopal. We service single door, double door & all brands like LG, Samsung, Whirlpool. For cooling issues & gas filling, call: +918878804847." />
-        <link rel="canonical" href="https://xpertrepair.com/services/refrigerator-repair" />
-        <meta property="og:title" content="Refrigerator Repair Service in Bhopal | Xpert Repair" />
-        <meta property="og:description" content="Fast & affordable fridge repair, installation, and gas refilling in Bhopal. We service all brands with a 6-month warranty." />
-        <meta property="og:url" content="https://xpertrepair.com/services/refrigerator-repair" />
+        <meta name="description" content="Expert refrigerator & fridge repair in Bhopal. We service single door, double door & all brands like LG, Samsung, Whirlpool. For cooling issues & gas filling, call: (887)-880-4847." />
+        <meta name="keywords" content="refrigerator repair bhopal, fridge repair bhopal, refrigerator repair technician, refrigerator compressor repair technician, lg fridge repair bhopal, samsung fridge service, whirlpool refrigerator service, fridge gas filling bhopal, double door fridge repair" />
+        <link rel="canonical" href="https://bhopalrepair.in/services/refrigerator-repair" />
+        <meta property="og:title" content="Refrigerator Repair Service in Bhopal | Xpert Repair" /> 
+        <meta property="og:description" content="Fast & affordable fridge repair, installation, and gas refilling in Bhopal. We service all brands." />
+        <meta property="og:url" content="https://bhopalrepair.in/services/refrigerator-repair" />
+        <meta property="og:image" content="https://bhopalrepair.in/og-image.jpg" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "serviceType": "Refrigerator Repair",
+            "provider": {
+              "@type": "LocalBusiness",
+              "name": "Xpert Home Appliance Repair"
+            },
+            "areaServed": { "@type": "City", "name": "Bhopal" },
+            "description": "Professional refrigerator and fridge repair service in Bhopal for all brands and models, including compressor repair and gas refilling."
+          })}
+        </script>
       </Helmet>
       <motion.div
         id="refrigerator-repair-page"
@@ -104,7 +119,6 @@ const RefrigeratorRepair = () => {
         <li className="text-[#747474]">All Brands Repaired: We service LG, Samsung, Whirlpool, Godrej, and all other major brands.</li>
         <li className="text-[#747474]">Same-Day Service: Quick diagnosis and repair, often within a few hours.</li>
         <li className="text-[#747474]">Genuine Parts: We use only original manufacturer parts for long-lasting repairs.</li>
-        <li className="text-[#747474]">6-Month Warranty: A comprehensive warranty on all repairs and services.</li>
         <li className="text-[#747474]">Certified Technicians: Our professionals are experienced and company-trained.</li>
         <li className="text-[#747474]">Affordable & Transparent Pricing: No hidden charges, with clear estimates provided upfront.</li>
       </ul>
@@ -119,7 +133,7 @@ const RefrigeratorRepair = () => {
         </p>
         <p className="text-lg">
           <span className="text-[#072C42] font-bold">For Fast Service, Call: </span>
-          <a href="tel:+918878804847" className="text-blue-600 font-bold hover:underline">+91-887-880-4847</a>
+          <a href="tel:+918878804847" className="text-blue-600 font-bold hover:underline">(887)-880-4847</a>
         </p>
         <p className="text-sm text-[#939393] mt-2">
           <span className="text-[#072C42] font-extrabold">Service Hours:</span> Monday to Sunday, 8:00 AM - 9:00 PM

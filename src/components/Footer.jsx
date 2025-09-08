@@ -147,13 +147,13 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-6">Contact Info</h3>
             <div className="space-y-4">
               <a
-                href="tel:+8878804847"
-                aria-label="Call Xpert Repair at (123) 456-7890 for 24/7 emergency appliance repair service"
+                href="tel:+918878804847"
+                aria-label="Call Xpert Repair at (887)-880-4847 for 24/7 emergency appliance repair service"
                 className="flex items-start space-x-3 text-gray-400 hover:text-white transition-colors duration-200 group"
               >
                 <Phone className="h-5 w-5 mt-1 text-blue-500" />
                 <div>
-                  <div className="font-medium">(887) 880-4847</div>
+                  <div className="font-medium">(887)-880-4847</div>
                   <div className="text-sm">24/7 Emergency Service</div>
                 </div>
               </a>
@@ -207,8 +207,8 @@ const Footer = () => {
               <div className="text-xs text-gray-400">Emergency Service</div>
             </div>
             <div className="bg-gray-800 p-4 rounded-lg">
-              <div className="text-2xl font-bold text-purple-500 mb-1">90</div>
-              <div className="text-xs text-gray-400">Day Warranty</div>
+              <div className="text-2xl font-bold text-purple-500 mb-1">✓</div>
+              <div className="text-xs text-gray-400">Licensed & Insured</div>
             </div>
           </div>
         </div>
@@ -234,8 +234,14 @@ const Footer = () => {
               >
                 Terms of Service
               </a>
-              <div className="text-blue-400">
-                Website by <span className="font-semibold">Ayan Sahil</span>
+              <div className="text-blue-400 ">
+                Website by{" "}
+                <a
+                  href="https://portfolio-lemon-two-88.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold hover:text-blue-300 transition-colors duration-200"
+                >Ayan Sahil</a>
               </div>
             </div>
           </div>

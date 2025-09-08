@@ -9,10 +9,11 @@ const AirConditionerRepair = () => {
       <Helmet>
         <title>AC Repair & Service in Bhopal | Window & Split AC | Xpert Repair</title>
         <meta name="description" content="Expert AC repair, installation, and service in Bhopal for window & split ACs. We fix cooling issues, gas leaks & more. Same-day service. Call Xpert Repair: +918878804847." />
-        <link rel="canonical" href="https://xpertrepair.com/services/air-conditioner-repair" />
+        <link rel="canonical" href="https://bhopalrepair.in/services/air-conditioner-repair" />
         <meta property="og:title" content="AC Repair & Service in Bhopal | Xpert Repair" />
-        <meta property="og:description" content="Fast, affordable AC repair, installation, and gas refilling in Bhopal. We service all brands. 6-month warranty." />
-        <meta property="og:url" content="https://xpertrepair.com/services/air-conditioner-repair" />
+        <meta property="og:description" content="Fast, affordable AC repair, installation, and gas refilling in Bhopal. We service all brands." />
+        <meta property="og:url" content="https://bhopalrepair.in/services/air-conditioner-repair" />
+        <meta property="og:image" content="https://bhopalrepair.in/og-image.jpg" />
       </Helmet>
       <motion.div
         id="ac-repair-page"
@@ -108,7 +109,6 @@ const AirConditionerRepair = () => {
         <li className="text-[#747474]">All AC Types Serviced: Expertise in Window, Split, and Central AC units.</li>
         <li className="text-[#747474]">Same-Day Service: Quick diagnosis and repair, often within hours.</li>
         <li className="text-[#747474]">Genuine Parts Only: We use original manufacturer parts for reliability.</li>
-        <li className="text-[#747474]">6-Month Warranty: Comprehensive warranty on all repairs and services.</li>
         <li className="text-[#747474]">Certified Technicians: Factory-trained and experienced professionals.</li>
         <li className="text-[#747474]">Affordable & Transparent Pricing: No hidden costs, clear estimates upfront.</li>
       </ul>
