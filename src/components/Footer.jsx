@@ -234,14 +234,11 @@ const Footer = () => {
               >
                 Terms of Service
               </a>
-              <div className="text-blue-400 ">
+              <div className="text-blue-400">
                 Website by{" "}
-                <a
-                  href="https://portfolio-lemon-two-88.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-semibold hover:text-blue-300 transition-colors duration-200"
-                >Ayan Sahil</a>
+                <span className="font-semibold">
+                  Ayan Sahil
+                </span>
               </div>
             </div>
           </div>
