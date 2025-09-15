@@ -18,10 +18,10 @@ import MicrowaveOvenRepair from './pages/services/microwave-oven-repair.jsx';
 import ROPurifierRepair from './pages/services/ro-purifier-repair.jsx';
 import GeyserRepair from './pages/services/geyser-repair.jsx';
 
-// Using existing components as pages so header links work
-import About from './components/About';
-import Brands from './components/Brands';
-import Contact from './components/Contact';
+// Page Imports for main navigation
+import AboutPage from './pages/AboutPage.jsx';
+import BrandsPage from './pages/BrandsPage.jsx';
+import ContactPage from './pages/ContactPage.jsx';
 
 // This helper component scrolls to the top of the page on route change
 const ScrollToTop = () => {
@@ -43,20 +43,20 @@ const App = () => {
           <main className="flex-grow pt-16 lg:pt-20">
             <Routes>
               <Route path="/" element={<HomePage />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/services" element={<ServicesPage />} />
+              <Route path="/about/" element={<AboutPage />} />
+              <Route path="/services/" element={<ServicesPage />} />
               
-              <Route path="/services/led-lcd-tv-repair" element={<LedLcdTvRepair />} />
-              <Route path="/services/plasma-tv-repair" element={<PlasmaTvRepair />} />
-              <Route path="/services/air-conditioner-repair" element={<AirConditionerRepair />} />
-              <Route path="/services/refrigerator-repair" element={<RefrigeratorRepair />} />
-              <Route path="/services/washing-machine-repair" element={<WashingMachineRepair />} />
-              <Route path="/services/microwave-oven-repair" element={<MicrowaveOvenRepair />} />
-              <Route path="/services/ro-purifier-repair" element={<ROPurifierRepair />} />
-              <Route path="/services/geyser-repair" element={<GeyserRepair />} />
+              <Route path="/services/led-lcd-tv-repair/" element={<LedLcdTvRepair />} />
+              <Route path="/services/plasma-tv-repair/" element={<PlasmaTvRepair />} />
+              <Route path="/services/air-conditioner-repair/" element={<AirConditionerRepair />} />
+              <Route path="/services/refrigerator-repair/" element={<RefrigeratorRepair />} />
+              <Route path="/services/washing-machine-repair/" element={<WashingMachineRepair />} />
+              <Route path="/services/microwave-oven-repair/" element={<MicrowaveOvenRepair />} />
+              <Route path="/services/ro-purifier-repair/" element={<ROPurifierRepair />} />
+              <Route path="/services/geyser-repair/" element={<GeyserRepair />} />
 
-              <Route path="/brands" element={<Brands />} />
-              <Route path="/contact" element={<Contact />} />
+              <Route path="/brands/" element={<BrandsPage />} />
+              <Route path="/contact/" element={<ContactPage />} />
             </Routes>
           </main>
           <Footer />

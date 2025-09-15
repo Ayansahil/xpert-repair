@@ -9,11 +9,11 @@ const PlasmaTvRepair = () => {
       <Helmet>
         <title>Plasma TV Repair in Bhopal | Expert Service for All Brands | Xpert Repair</title>
         <meta name="description" content="Professional Plasma TV repair in Bhopal. We fix common plasma issues like screen burn-in, dead pixels, sound problems, and power failure. Samsung, LG, Panasonic specialists." />
-        <meta name="keywords" content="plasma tv repair bhopal, tv repair bhopal, samsung plasma tv repair, lg plasma tv repair, panasonic plasma tv repair, Anand Nagar 462021, Arera Hills 462011, Kolar Road 462042" />
-        <link rel="canonical" href="https://bhopalrepair.in/services/plasma-tv-repair" />
+        <meta name="keywords" content="plasma tv repair bhopal near me, tv repair bhopal near me, samsung plasma tv repair near me, lg plasma tv repair near me, panasonic plasma tv repair near me, Anand Nagar 462021, Arera Hills 462011, Kolar Road 462042" />
+        <link rel="canonical" href="https://bhopalrepair.in/services/plasma-tv-repair/" />
         <meta property="og:title" content="Plasma TV Repair in Bhopal | Xpert Repair" />
         <meta property="og:description" content="Fast, affordable, and reliable Plasma TV repair services in Bhopal. Customer satisfaction guaranteed." />
-        <meta property="og:url" content="https://bhopalrepair.in/services/plasma-tv-repair" />
+        <meta property="og:url" content="https://bhopalrepair.in/services/plasma-tv-repair/" />
         <meta property="og:image" content="https://bhopalrepair.in/og-image.jpg" />
       </Helmet>
       <motion.div

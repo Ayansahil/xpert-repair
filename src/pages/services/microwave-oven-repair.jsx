@@ -8,11 +8,11 @@ const MicrowaveOvenRepair = () => {
       <Helmet>
         <title>Microwave Oven Repair Bhopal | Solo, Grill, Convection | Xpert Repair</title>
         <meta name="description" content="Expert microwave oven repair in Bhopal for all brands like LG, Samsung, IFB. We fix heating, sparking & PCB issues. Same-day service in Kolar, MP Nagar. Call: (887)-880-4847." />
-        <meta name="keywords" content="Microwave repair bhopal, microwave oven repair bhopal, lg microwave repair bhopal, samsung microwave repair bhopal, ifb microwave repair bhopal, Kolar Road 462042, Arera Colony, MP Nagar" />
-        <link rel="canonical" href="https://bhopalrepair.in/services/microwave-oven-repair" />
+        <meta name="keywords" content="Microwave repair bhopal near me,top mircowave brand repair service near me, microwave oven repair bhopal, lg microwave repair bhopal near me, samsung microwave repair bhopal, ifb microwave repair bhopal near me, Kolar Road 462042, Arera Colony, MP Nagar" />
+        <link rel="canonical" href="https://bhopalrepair.in/services/microwave-oven-repair/" />
         <meta property="og:title" content="Microwave Oven Repair Service in Bhopal | Xpert Repair" />
         <meta property="og:description" content="Fast, affordable microwave repair for solo, grill, and convection models in Bhopal. We service all brands with a 6-month warranty." />
-        <meta property="og:url" content="https://bhopalrepair.in/services/microwave-oven-repair" />
+        <meta property="og:url" content="https://bhopalrepair.in/services/microwave-oven-repair/" />
         <meta property="og:image" content="https://bhopalrepair.in/og-image.jpg" />
       </Helmet>
       <motion.div

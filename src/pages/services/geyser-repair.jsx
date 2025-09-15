@@ -8,11 +8,11 @@ const GeyserRepair = () => {
       <Helmet>
         <title>Geyser Repair & Service Bhopal | Water Heater | Xpert Repair</title>
         <meta name="description" content="Expert geyser repair and installation service in Bhopal for all brands like Bajaj, Havells, AO Smith. We fix heating & water flow issues. Same-day service. Call: +918878804847." />
-        <meta name="keywords" content="geyser repair bhopal, geyser repair service technician, water heater repair bhopal, geyser installation bhopal, bajaj geyser service, havells geyser repair, electric geyser repair near me, racold geyser service, ao smith geyser repair" />
-        <link rel="canonical" href="https://bhopalrepair.in/services/geyser-repair" />
+        <meta name="keywords" content="geyser repair bhopal near me, water heater repair bhopal, top geyser service near me, geyser repair service technician near me, water heater repair near me bhopal, geyser installation bhopal, bajaj geyser service near me, havells geyser repair near me, electric geyser repair near me, racold geyser service near me, ao smith geyser repair near me" />
+        <link rel="canonical" href="https://bhopalrepair.in/services/geyser-repair/" />
         <meta property="og:title" content="Geyser & Water Heater Repair Service in Bhopal | Xpert Repair" />
         <meta property="og:description" content="Fast, affordable geyser repair, installation, and service in Bhopal. We fix all instant and storage geyser models." />
-        <meta property="og:url" content="https://bhopalrepair.in/services/geyser-repair" />
+        <meta property="og:url" content="https://bhopalrepair.in/services/geyser-repair/" />
         <meta property="og:image" content="https://bhopalrepair.in/og-image.jpg" />
         <script type="application/ld+json">
           {JSON.stringify({

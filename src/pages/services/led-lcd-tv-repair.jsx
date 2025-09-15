@@ -7,13 +7,13 @@ const LedLcdTvRepair = () => {
   return (
     <>
       <Helmet>
-        <title>LED/LCD TV Repair in Bhopal | Fast & Reliable Service | Xpert Repair</title> 
+        <title>LED/LCD TV Repair in Bhopal Near Me | Fast & Reliable Service | Xpert Repair</title> 
         <meta name="description" content="Expert LED & LCD TV repair in Bhopal. We fix screen, sound, and power issues for all brands like Samsung, LG, Sony. Same-day service. Call Xpert Repair now!" />
-        <meta name="keywords" content="Led tv repair bhopal, lcd tv repair bhopal, tv repair bhopal, samsung tv repair bhopal, lg tv repair bhopal, sony tv repair bhopal, LED TV repair technician, LED TV display repair, LED TV motherboard repair in bhopal, Anand Nagar, Arera Hills, Kolar Road, 462021, 462011, 462042" />
-        <link rel="canonical" href="https://bhopalrepair.in/services/led-lcd-tv-repair" />
+        <meta name="keywords" content="led tv repair bhopal near me, lcd tv repair bhopal near me, tv repair bhopal near me, samsung tv repair bhopal near me, lg tv repair bhopal near me, sony tv repair bhopal near me, LED TV repair technician near me, LED TV display repair near me, LED TV motherboard repair in bhopal near me, Anand Nagar, Arera Hills, Kolar Road, 462021, 462011, 462042" />
+        <link rel="canonical" href="https://bhopalrepair.in/services/led-lcd-tv-repair/" />
         <meta property="og:title" content="LED/LCD TV Repair in Bhopal | Xpert Repair" />
         <meta property="og:description" content="Fast, affordable, and reliable LED/LCD TV repair services in Bhopal." />
-        <meta property="og:url" content="https://bhopalrepair.in/services/led-lcd-tv-repair" />
+        <meta property="og:url" content="https://bhopalrepair.in/services/led-lcd-tv-repair/" />
         <meta property="og:image" content="https://bhopalrepair.in/og-image.jpg" />
       </Helmet>
       <motion.div

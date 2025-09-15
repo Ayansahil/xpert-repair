@@ -1,4 +1,5 @@
 {
+  "trailingSlash": true,
   "rewrites": [
     {
       "source": "/((?!api/|_next/|static/|public/|favicon.ico|sitemap.xml|robots.txt).*)",

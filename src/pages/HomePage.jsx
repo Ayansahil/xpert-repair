@@ -13,7 +13,7 @@ const HomePage = () => {
       <Helmet>
         <title>Xpert Home Appliance Repair Bhopal | Same-Day Service & Free Quote</title>
         <meta name="description" content="Top-rated home appliance repair in Bhopal. Xpert Repair offers same-day service for TV, AC, fridge, and washing machines. 7+ years experience. Call (887)-880-4847 for a free quote!" />
-        <meta name="keywords" content="home appliance repair bhopal, same day appliance repair bhopal, tv repair bhopal, ac repair bhopal, refrigerator repair bhopal, washing machine repair bhopal, expert appliance service, Led tv repair bhopal, fridge repair bhopal, Microwave repair bhopal, Ac repair service bhopal, geyser repair bhopal, bhopal best service, refrigerator repair technician, geyser repair service technician" />
+        <meta name="keywords" content="home appliance repair bhopal near me, same day appliance repair bhopal near me, tv repair bhopal near me, ac repair bhopal near me, refrigerator repair bhopal near me, washing machine repair bhopal near me, expert appliance service, Led tv repair bhopal near me, fridge repair bhopal near me, Microwave repair bhopal near me, Ac repair service bhopal near me, geyser repair bhopal near me, bhopal best service near me, refrigerator repair technician near me, geyser repair service technician near bhopal" />
         <link rel="canonical" href="https://bhopalrepair.in/" />
         <meta property="og:title" content="Xpert Home Appliance Repair Bhopal | Same-Day Service" />
         

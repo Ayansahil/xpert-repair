@@ -21,7 +21,7 @@ const Services = () => {
       icon: Monitor,
       description:
         "Xpert Repair offers reliable LED LCD TV repair in Bhopal with quick solutions for screen, sound, and power issues.",
-      image: "images/services/led-lcd-tv-repair.jpg",
+      image: "/images/services/led-lcd-tv-repair.jpg",
       alt: "LED LCD TV Repair Bhopal",
     },
     {
@@ -31,7 +31,7 @@ const Services = () => {
       icon: Tv,
       description:
         "Need television repair in Bhopal? Xpert Repair provides fast and affordable professional plasma TV repair services.",
-      image: "images/services/plasma-tv-repair.jpg",
+      image: "/images/services/plasma-tv-repair.jpg",
       alt: "Plasma TV Repair Bhopal",
     },
     {
@@ -41,7 +41,7 @@ const Services = () => {
       icon: Wind,
       description:
         "Xpert Repair delivers fast and affordable air conditioner repair services in Bhopal with professional installation.",
-      image: "images/services/air-conditioner-repair.jpg",
+      image: "/images/services/air-conditioner-repair.jpg",
       alt: "Air Conditioner Repair Bhopal",
     },
     {
@@ -51,7 +51,7 @@ const Services = () => {
       icon: Refrigerator,
       description:
         "Our refrigerator repair technician in Bhopal handles cooling problems, ice maker issues, and complex refrigerator compressor repair.",
-      image: "images/services/refrigerator-repair.jpg", 
+      image: "/images/services/refrigerator-repair.jpg",
       alt: "Refrigerator compressor repair technician Bhopal",
     },
     {
@@ -71,7 +71,7 @@ const Services = () => {
       icon: Microwave,
       description:
         "Xpert Repair offers professional microwave repair in Bhopal with quick fixes for heating problems and door malfunctions.",
-      image: "images/services/microwave-oven-repair.jpg",
+      image: "/images/services/microwave-oven-repair.jpg",
       alt: "Microwave Oven Repair Bhopal",
     },
     {
@@ -81,7 +81,7 @@ const Services = () => {
       icon: GlassWater,
       description:
         "Xpert Repair offers professional RO purifier repair in Bhopal with quick fixes for water leakage, filter replacement, and purification issues.",
-      image: "images/services/ro-purifier-repair.jpg",
+      image: "/images/services/ro-purifier-repair.jpg",
       alt: "RO Purifier Repair Bhopal",
     },
     {
@@ -91,7 +91,7 @@ const Services = () => {
       icon: ShowerHead,
       description:
         "Our geyser repair service technician in Bhopal provides fast solutions for heating problems, water flow issues, and installation.",
-      image: "images/services/geyser-repair.jpg", 
+      image: "/images/services/geyser-repair.jpg",
       alt: "Geyser repair service technician Bhopal",
     },
   ];

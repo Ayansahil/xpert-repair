@@ -7,12 +7,13 @@ const AirConditionerRepair = () => {
   return (
     <>
       <Helmet>
-        <title>AC Repair & Service in Bhopal | Window & Split AC | Xpert Repair</title>
+        <title>AC Repair & Service in Bhopal Near Me| Window & Split AC | Xpert Repair</title>
         <meta name="description" content="Expert AC repair, installation, and service in Bhopal for window & split ACs. We fix cooling issues, gas leaks & more. Same-day service. Call Xpert Repair: +918878804847." />
-        <link rel="canonical" href="https://bhopalrepair.in/services/air-conditioner-repair" />
+        <meta name="keywords" content="ac repair bhopal near me, ac service near me, ac installation bhopal, ac gas filling bhopal, split ac repair bhopal, window ac service near me, daikin ac service near me, lg ac repair near me, samsung ac service bhopal near me" />
+        <link rel="canonical" href="https://bhopalrepair.in/services/air-conditioner-repair/" />
         <meta property="og:title" content="AC Repair & Service in Bhopal | Xpert Repair" />
         <meta property="og:description" content="Fast, affordable AC repair, installation, and gas refilling in Bhopal. We service all brands." />
-        <meta property="og:url" content="https://bhopalrepair.in/services/air-conditioner-repair" />
+        <meta property="og:url" content="https://bhopalrepair.in/services/air-conditioner-repair/" />
         <meta property="og:image" content="https://bhopalrepair.in/og-image.jpg" />
       </Helmet>
       <motion.div

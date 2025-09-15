@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
 
@@ -15,11 +15,11 @@ const ROPurifierRepair = () => {
         />
         <meta
           name="keywords"
-          content="ro repair bhopal, water purifier service bhopal, kent ro service bhopal, aquaguard service near me, ro installation bhopal, ro filter change, water purifier repair bhopal, livpure ro service"
+          content="top ro services repaire near me,ro repair bhopal near me, water purifier service bhopal near me, kent ro service near me bhopal, aquaguard service near me, ro installation bhopal, ro filter change, water purifier repair bhopal, livpure ro service near me"
         />
         <link
           rel="canonical"
-          href="https://bhopalrepair.in/services/ro-purifier-repair"
+          href="https://bhopalrepair.in/services/ro-purifier-repair/"
         />
         <meta
           property="og:title"
@@ -31,17 +31,24 @@ const ROPurifierRepair = () => {
         />
         <meta
           property="og:url"
-          content="https://bhopalrepair.in/services/ro-purifier-repair"
+          content="https://bhopalrepair.in/services/ro-purifier-repair/"
         />
-        <meta property="og:image" content="https://bhopalrepair.in/og-image.jpg" />
+        <meta
+          property="og:image"
+          content="https://bhopalrepair.in/og-image.jpg"
+        />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Service",
-            "serviceType": "RO Purifier Repair",
-            "provider": { "@type": "LocalBusiness", "name": "Xpert Home Appliance Repair" },
-            "areaServed": { "@type": "City", "name": "Bhopal" },
-            "description": "Professional RO water purifier repair and service in Bhopal for all brands. We handle filter changes, leakage, and all other issues."
+            serviceType: "RO Purifier Repair",
+            provider: {
+              "@type": "LocalBusiness",
+              name: "Xpert Home Appliance Repair",
+            },
+            areaServed: { "@type": "City", name: "Bhopal" },
+            description:
+              "Professional RO water purifier repair and service in Bhopal for all brands. We handle filter changes, leakage, and all other issues.",
           })}
         </script>
       </Helmet>

@@ -15,20 +15,20 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const serviceLinks = [
-    { name: "Refrigerator Repair", path: "/services/refrigerator-repair" },
+    { name: "Refrigerator Repair", path: "/services/refrigerator-repair/" },
     {
       name: "Washing Machine Repair",
-      path: "/services/washing-machine-repair",
+      path: "/services/washing-machine-repair/",
     },
     {
       name: "Air Conditioner Repair",
-      path: "/services/air-conditioner-repair",
+      path: "/services/air-conditioner-repair/",
     },
-    { name: "LED & LCD TV Repair", path: "/services/led-lcd-tv-repair" },
-    { name: "Microwave Oven Repair", path: "/services/microwave-oven-repair" },
-    { name: "RO Purifier Repair", path: "/services/ro-purifier-repair" },
-    { name: "Geyser Repair", path: "/services/geyser-repair" },
-    { name: "Plasma Tv Repair", path: "/services/plasma-tv-repair" },
+    { name: "LED & LCD TV Repair", path: "/services/led-lcd-tv-repair/" },
+    { name: "Microwave Oven Repair", path: "/services/microwave-oven-repair/" },
+    { name: "RO Purifier Repair", path: "/services/ro-purifier-repair/" },
+    { name: "Geyser Repair", path: "/services/geyser-repair/" },
+    { name: "Plasma Tv Repair", path: "/services/plasma-tv-repair/" },
   ];
 
   return (
@@ -92,7 +92,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="/about"
+                  to="/about/"
                   className="text-gray-400 hover:text-white transition-colors duration-200"
                 >
                   About Us
@@ -100,7 +100,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="/services"
+                  to="/services/"
                   className="text-gray-400 hover:text-white transition-colors duration-200"
                 >
                   Our Services
@@ -108,7 +108,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="/brands"
+                  to="/brands/"
                   className="text-gray-400 hover:text-white transition-colors duration-200"
                 >
                   Supported Brands
@@ -116,7 +116,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="/contact"
+                  to="/contact/"
                   className="text-gray-400 hover:text-white transition-colors duration-200"
                 >
                   Contact

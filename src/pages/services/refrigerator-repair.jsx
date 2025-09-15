@@ -9,11 +9,11 @@ const RefrigeratorRepair = () => {
       <Helmet>
         <title>Refrigerator Repair Bhopal | Fridge Service & Gas Filling | Xpert Repair</title>
         <meta name="description" content="Expert refrigerator & fridge repair in Bhopal. We service single door, double door & all brands like LG, Samsung, Whirlpool. For cooling issues & gas filling, call: (887)-880-4847." />
-        <meta name="keywords" content="refrigerator repair bhopal, fridge repair bhopal, refrigerator repair technician, refrigerator compressor repair technician, lg fridge repair bhopal, samsung fridge service, whirlpool refrigerator service, fridge gas filling bhopal, double door fridge repair" />
-        <link rel="canonical" href="https://bhopalrepair.in/services/refrigerator-repair" />
+        <meta name="keywords" content="refrigerator repair bhopal near me, fridge repair near me bhopal,top fridge repair near me, top refrigerator repair technician near me, refrigerator compressor repair near me, lg fridge repair near me bhopal, samsung fridge service near me, whirlpool refrigerator service near me, fridge gas filling near me bhopal, double door fridge repair near me" />
+        <link rel="canonical" href="https://bhopalrepair.in/services/refrigerator-repair/" />
         <meta property="og:title" content="Refrigerator Repair Service in Bhopal | Xpert Repair" /> 
         <meta property="og:description" content="Fast & affordable fridge repair, installation, and gas refilling in Bhopal. We service all brands." />
-        <meta property="og:url" content="https://bhopalrepair.in/services/refrigerator-repair" />
+        <meta property="og:url" content="https://bhopalrepair.in/services/refrigerator-repair/" />
         <meta property="og:image" content="https://bhopalrepair.in/og-image.jpg" />
         <script type="application/ld+json">
           {JSON.stringify({

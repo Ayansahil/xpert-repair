@@ -89,7 +89,7 @@ const Header = () => {
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/about" className={({isActive}) => `font-semibold transition-all duration-300 px-4 py-2 rounded-full ${isActive ? 'bg-[#3B82F6] text-white' : 'text-gray-700 hover:bg-[#3B82F6] hover:text-white'}`}>
+                <NavLink to="/about/" className={({isActive}) => `font-semibold transition-all duration-300 px-4 py-2 rounded-full ${isActive ? 'bg-[#3B82F6] text-white' : 'text-gray-700 hover:bg-[#3B82F6] hover:text-white'}`}>
                   About
                 </NavLink>
               </li>
@@ -97,7 +97,7 @@ const Header = () => {
               {/* CHANGED: Restored the services dropdown functionality. */}
               <li className="relative" onMouseEnter={() => setIsServicesOpen(true)} onMouseLeave={() => setIsServicesOpen(false)}>
                 <NavLink 
-                  to="/services" 
+                  to="/services/" 
                   className={({isActive}) => `font-semibold transition-all duration-300 px-4 py-2 rounded-full flex items-center space-x-1 ${isActive ? 'bg-[#3B82F6] text-white' : 'text-gray-700 hover:bg-[#3B82F6] hover:text-white'}`}
                 >
                   <span>Services</span>
@@ -116,7 +116,7 @@ const Header = () => {
                     {serviceItems.map((service) => (
                       <li key={service.slug}>
                         <NavLink
-                          to={`/services/${service.slug}`}
+                          to={`/services/${service.slug}/`}
                           className="block px-5 py-2.5 text-gray-700 hover:bg-[#3B82F6] hover:text-white transition-all duration-200 font-medium"
                           onClick={() => setIsServicesOpen(false)}
                         >
@@ -129,12 +129,12 @@ const Header = () => {
               </li>
 
               <li>
-                <NavLink to="/brands" className={({isActive}) => `font-semibold transition-all duration-300 px-4 py-2 rounded-full ${isActive ? 'bg-[#3B82F6] text-white' : 'text-gray-700 hover:bg-[#3B82F6] hover:text-white'}`}>
+                <NavLink to="/brands/" className={({isActive}) => `font-semibold transition-all duration-300 px-4 py-2 rounded-full ${isActive ? 'bg-[#3B82F6] text-white' : 'text-gray-700 hover:bg-[#3B82F6] hover:text-white'}`}>
                   Brands
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/contact" className={({isActive}) => `font-semibold transition-all duration-300 px-4 py-2 rounded-full ${isActive ? 'bg-[#3B82F6] text-white' : 'text-gray-700 hover:bg-[#3B82F6] hover:text-white'}`}>
+                <NavLink to="/contact/" className={({isActive}) => `font-semibold transition-all duration-300 px-4 py-2 rounded-full ${isActive ? 'bg-[#3B82F6] text-white' : 'text-gray-700 hover:bg-[#3B82F6] hover:text-white'}`}>
                   Contact
                 </NavLink>
               </li>
@@ -194,7 +194,7 @@ const Header = () => {
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/about" onClick={closeMobileMenu} className={({isActive}) => `block py-3 px-4 font-semibold rounded-lg transition-all duration-300 ${isActive ? 'bg-[#3B82F6] text-white' : 'text-gray-700 hover:bg-[#3B82F6] hover:text-white'}`}>
+                <NavLink to="/about/" onClick={closeMobileMenu} className={({isActive}) => `block py-3 px-4 font-semibold rounded-lg transition-all duration-300 ${isActive ? 'bg-[#3B82F6] text-white' : 'text-gray-700 hover:bg-[#3B82F6] hover:text-white'}`}>
                   About
                 </NavLink>
               </li>
@@ -215,14 +215,14 @@ const Header = () => {
                   <ul className="mt-2 ml-4 space-y-1 border-l-2 border-blue-100">
                     {/* This link is necessary for mobile users to get to the main services page */}
                     <li>
-                      <NavLink to="/services" onClick={closeMobileMenu} className="block py-2 px-4 text-sm font-semibold text-[#3B82F6] hover:text-[#3B82F6] hover:bg-blue-50 rounded-lg transition-all duration-200">
+                      <NavLink to="/services/" onClick={closeMobileMenu} className="block py-2 px-4 text-sm font-semibold text-[#3B82F6] hover:text-[#3B82F6] hover:bg-blue-50 rounded-lg transition-all duration-200">
                         All Services
                       </NavLink>
                     </li>
                     {serviceItems.map((service) => (
                       <li key={service.slug}>
                         <NavLink 
-                          to={`/services/${service.slug}`} 
+                          to={`/services/${service.slug}/`} 
                           onClick={closeMobileMenu} 
                           className="block py-2 px-4 text-sm text-gray-600 hover:text-[#3B82F6] hover:bg-blue-50 rounded-lg transition-all duration-200"
                         >
@@ -235,12 +235,12 @@ const Header = () => {
               </li>
 
               <li>
-                <NavLink to="/brands" onClick={closeMobileMenu} className={({isActive}) => `block py-3 px-4 font-semibold rounded-lg transition-all duration-300 ${isActive ? 'bg-[#3B82F6] text-white' : 'text-gray-700 hover:bg-[#3B82F6] hover:text-white'}`}>
+                <NavLink to="/brands/" onClick={closeMobileMenu} className={({isActive}) => `block py-3 px-4 font-semibold rounded-lg transition-all duration-300 ${isActive ? 'bg-[#3B82F6] text-white' : 'text-gray-700 hover:bg-[#3B82F6] hover:text-white'}`}>
                   Brands
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/contact" onClick={closeMobileMenu} className={({isActive}) => `block py-3 px-4 font-semibold rounded-lg transition-all duration-300 ${isActive ? 'bg-[#3B82F6] text-white' : 'text-gray-700 hover:bg-[#3B82F6] hover:text-white'}`}>
+                <NavLink to="/contact/" onClick={closeMobileMenu} className={({isActive}) => `block py-3 px-4 font-semibold rounded-lg transition-all duration-300 ${isActive ? 'bg-[#3B82F6] text-white' : 'text-gray-700 hover:bg-[#3B82F6] hover:text-white'}`}>
                   Contact
                 </NavLink>
               </li>
