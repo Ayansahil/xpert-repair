@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import { Helmet } from 'react-helmet-async';
 import Hero from '../components/Hero';
-// CHANGED: Imported all the components for the main page.
-import About from '../components/About';
-import Services from '../components/Services';
-import Brands from '../components/Brands';
-import Contact from '../components/Contact';
+import LoadingSpinner from '../components/LoadingSpinner';
+
+// Lazy load components that are likely below the fold
+const About = lazy(() => import('../components/About'));
+const Services = lazy(() => import('../components/Services'));
+const Brands = lazy(() => import('../components/Brands'));
+const Contact = lazy(() => import('../components/Contact'));
 
 const HomePage = () => {
   return (
@@ -57,10 +59,12 @@ const HomePage = () => {
       </Helmet>
       {/* CHANGED: Added all components to render them on the homepage. */}
       <Hero />
-      <About />
-      <Services />
-      <Brands />
-      <Contact />
+      <Suspense fallback={<LoadingSpinner />}>
+        <About />
+        <Services />
+        <Brands />
+        <Contact />
+      </Suspense>
     </>
   );
 };
