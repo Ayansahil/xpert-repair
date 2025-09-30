@@ -15,6 +15,21 @@ const PlasmaTvRepair = () => {
         <meta property="og:description" content="Fast, affordable, and reliable Plasma TV repair services in Bhopal. Customer satisfaction guaranteed." />
         <meta property="og:url" content="https://bhopalrepair.in/services/plasma-tv-repair/" />
         <meta property="og:image" content="https://bhopalrepair.in/og-image.jpg" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "serviceType": "Plasma TV Repair",
+            "url": "https://bhopalrepair.in/services/plasma-tv-repair/",
+            "provider": {
+              "@type": "LocalBusiness",
+              "name": "Xpert Home Appliance Repair",
+              "@id": "https://bhopalrepair.in/"
+            },
+            "areaServed": { "@type": "City", "name": "Bhopal" },
+            "description": "Specialist Plasma TV repair in Bhopal for issues like screen burn-in, power failure, and sound problems."
+          })}
+        </script>
       </Helmet>
       <motion.div
         id="plasma-tv-repair-page"
@@ -119,7 +134,7 @@ const PlasmaTvRepair = () => {
         </p>
         <p className="text-lg">
           <span className="text-[#072C42] font-bold">Call Now: </span>
-          <a href="tel:+918878804847" className="text-blue-500 font-bold hover:underline">+91-887-880-4847</a>
+          <a href="tel:+918878804847" className="text-blue-500 font-bold hover:underline">+91-8878804847</a>
         </p>
         <p className="text-sm text-[#939393] mt-2">
           <span className="text-[#072C42] font-extrabold">Service Hours:</span> Monday to Sunday, 9:00 AM - 8:00 PM

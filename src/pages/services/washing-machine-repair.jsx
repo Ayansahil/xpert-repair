@@ -39,6 +39,23 @@ const WashingMachineRepair = () => {
           content="https://bhopalrepair.in/og-image.jpg"
         />
       </Helmet>
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "serviceType": "Washing Machine Repair",
+            "url": "https://bhopalrepair.in/services/washing-machine-repair/",
+            "provider": {
+              "@type": "LocalBusiness",
+              "name": "Xpert Home Appliance Repair",
+              "@id": "https://bhopalrepair.in/"
+            },
+            "areaServed": { "@type": "City", "name": "Bhopal" },
+            "description": "Same-day repair service in Bhopal for all types of washing machines, including top load, front load, and automatic models."
+          })}
+        </script>
+      </Helmet>
       <motion.div
         id="washing-machine-repair-page"
         className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12"
@@ -214,7 +231,7 @@ const WashingMachineRepair = () => {
               href="tel:+918878804847"
               className="text-blue-600 font-bold hover:underline"
             >
-              +91-887-880-4847
+           +91-8878804847
             </a>
           </p>
           <p className="text-sm text-[#939393] mt-2">
@@ -232,7 +249,7 @@ const WashingMachineRepair = () => {
             top load washing machine service, lg washing machine repair bhopal,
             samsung washing machine service, ifb repair bhopal, automatic
             washing machine repair, washer dryer repair, washing machine near me
-            technician, Xpert Repair Bhopal, +918878804847.
+            technician, Xpert Repair Bhopal, +91-8878804847.
           </p>
         </div>
       </motion.div>

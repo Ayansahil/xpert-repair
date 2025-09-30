@@ -19,9 +19,11 @@ const GeyserRepair = () => {
             "@context": "https://schema.org",
             "@type": "Service",
             "serviceType": "Geyser Repair",
+            "url": "https://bhopalrepair.in/services/geyser-repair/",
             "provider": {
               "@type": "LocalBusiness",
-              "name": "Xpert Home Appliance Repair"
+              "name": "Xpert Home Appliance Repair",
+              "@id": "https://bhopalrepair.in/"
             },
             "areaServed": { "@type": "City", "name": "Bhopal" },
             "description": "Professional geyser and water heater repair service in Bhopal for all brands and models, including instant and storage geysers."
@@ -114,7 +116,7 @@ Xpert Repair offers reliable and professional Geyser repair services in Bhopal, 
           </p>
           <p className="text-lg">
             <span className="text-[#072C42] font-bold">Call for Fast Service: </span>
-            <a href="tel:+918878804847" className="text-blue-600 font-bold hover:underline">+91-887-880-4847</a>
+            <a href="tel:+918878804847" className="text-blue-600 font-bold hover:underline">+91-8878804847</a>
           </p>
           <p className="text-sm text-[#939393] mt-2">
             <span className="text-[#072C42] font-extrabold">Service Hours:</span> Monday to Sunday, 8:00 AM - 9:00 PM
@@ -123,7 +125,7 @@ Xpert Repair offers reliable and professional Geyser repair services in Bhopal, 
 
         <div className="mt-8 text-xs text-gray-400">
           <p className="sr-only">
-            geyser repair bhopal, water heater repair bhopal, geyser installation bhopal, bajaj geyser service, havells geyser repair, electric geyser repair near me, racold geyser service, ao smith geyser repair, Xpert Repair Bhopal, +918878804847.
+            geyser repair bhopal, water heater repair bhopal, geyser installation bhopal, bajaj geyser service, havells geyser repair, electric geyser repair near me, racold geyser service, ao smith geyser repair, Xpert Repair Bhopal, +91-8878804847.
           </p>
         </div>
       </motion.div>

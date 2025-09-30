@@ -41,13 +41,15 @@ const ROPurifierRepair = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Service",
-            serviceType: "RO Purifier Repair",
-            provider: {
+            "serviceType": "RO Purifier Repair",
+            "url": "https://bhopalrepair.in/services/ro-purifier-repair/",
+            "provider": {
               "@type": "LocalBusiness",
               name: "Xpert Home Appliance Repair",
+              "@id": "https://bhopalrepair.in/"
             },
-            areaServed: { "@type": "City", name: "Bhopal" },
-            description:
+            "areaServed": { "@type": "City", "name": "Bhopal" },
+            "description":
               "Professional RO water purifier repair and service in Bhopal for all brands. We handle filter changes, leakage, and all other issues.",
           })}
         </script>
@@ -204,7 +206,7 @@ const ROPurifierRepair = () => {
               href="tel:+918878804847"
               className="text-blue-600 font-bold hover:underline"
             >
-              +91-887-880-4847
+              +918878804847
             </a>
           </p>
           <p className="text-sm text-[#939393] mt-2">
@@ -220,7 +222,7 @@ const ROPurifierRepair = () => {
             ro repair bhopal, water purifier service bhopal, kent ro service
             bhopal, aquaguard service near me, ro installation bhopal, ro filter
             change, water purifier repair bhopal, livpure ro service, ro service
-            near me bhopal, Xpert Repair Bhopal, +918878804847.
+            near me bhopal, Xpert Repair Bhopal, +91-8878804847.
           </p>
         </div>
       </motion.div>

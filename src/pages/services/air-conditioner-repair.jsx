@@ -15,6 +15,21 @@ const AirConditionerRepair = () => {
         <meta property="og:description" content="Fast, affordable AC repair, installation, and gas refilling in Bhopal. We service all brands." />
         <meta property="og:url" content="https://bhopalrepair.in/services/air-conditioner-repair/" />
         <meta property="og:image" content="https://bhopalrepair.in/og-image.jpg" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "serviceType": "Air Conditioner Repair",
+            "url": "https://bhopalrepair.in/services/air-conditioner-repair/",
+            "provider": {
+              "@type": "LocalBusiness",
+              "name": "Xpert Home Appliance Repair",
+              "@id": "https://bhopalrepair.in/"
+            },
+            "areaServed": { "@type": "City", "name": "Bhopal" },
+            "description": "Professional AC repair, installation, and maintenance service in Bhopal for window, split, and all other AC types."
+          })}
+        </script>
       </Helmet>
       <motion.div
         id="ac-repair-page"
@@ -124,7 +139,7 @@ const AirConditionerRepair = () => {
         </p>
         <p className="text-lg">
           <span className="text-[#072C42] font-bold">Call Now for Fast Service: </span>
-          <a href="tel:+918878804847" className="text-blue-600 font-bold hover:underline">+91-887-880-4847</a>
+          <a href="tel:+918878804847" className="text-blue-600 font-bold hover:underline">+91-8878804847</a>
         </p>
         <p className="text-sm text-[#939393] mt-2">
           <span className="text-[#072C42] font-extrabold">Service Hours:</span> Monday to Sunday, 8:00 AM - 9:00 PM
@@ -135,7 +150,7 @@ const AirConditionerRepair = () => {
       <div className="mt-8 text-xs text-gray-400">
         {/* Hidden SEO content for better indexing */}
         <p className="sr-only">
-          AC repair Bhopal, split AC service Bhopal, window AC installation Bhopal, AC gas filling Bhopal, air conditioner service near me, Daikin AC service, LG AC repair, Samsung AC service Bhopal, +918878804847, Xpert Repair Bhopal, AC uninstallation, AC AMC Bhopal.
+          AC repair Bhopal, split AC service Bhopal, window AC installation Bhopal, AC gas filling Bhopal, air conditioner service near me, Daikin AC service, LG AC repair, Samsung AC service Bhopal, +91-8878804847, Xpert Repair Bhopal, AC uninstallation, AC AMC Bhopal.
         </p>
       </div>
       </motion.div>

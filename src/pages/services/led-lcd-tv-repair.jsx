@@ -15,6 +15,21 @@ const LedLcdTvRepair = () => {
         <meta property="og:description" content="Fast, affordable, and reliable LED/LCD TV repair services in Bhopal." />
         <meta property="og:url" content="https://bhopalrepair.in/services/led-lcd-tv-repair/" />
         <meta property="og:image" content="https://bhopalrepair.in/og-image.jpg" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "serviceType": "LED/LCD TV Repair",
+            "url": "https://bhopalrepair.in/services/led-lcd-tv-repair/",
+            "provider": {
+              "@type": "LocalBusiness",
+              "name": "Xpert Home Appliance Repair",
+              "@id": "https://bhopalrepair.in/"
+            },
+            "areaServed": { "@type": "City", "name": "Bhopal" },
+            "description": "Expert repair service in Bhopal for all brands of LED, LCD, and Smart TVs, fixing screen, sound, and power issues."
+          })}
+        </script>
       </Helmet>
       <motion.div
         id="led-lcd-tv-repair-page"
@@ -151,7 +166,7 @@ const LedLcdTvRepair = () => {
         </p>
         <p className="text-lg">
           <span className="text-[#072C42] font-bold">Call Now: </span>
-          <a href="tel:+918878804847" className="text-blue-500 font-bold hover:underline">+91-887-880-4847</a>
+          <a href="tel:+918878804847" className="text-blue-500 font-bold hover:underline">+91-8878804847</a>
         </p>
         <p className="text-sm text-[#939393] mt-2">
           <span className="text-[#072C42] font-extrabold">Service Hours:</span> Monday to Sunday, 9:00 AM - 8:00 PM
